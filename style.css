@@ -85,7 +85,6 @@ nav li a:hover {
     font-weight: 300;
     color: rgb(85, 207, 255);
     text-shadow: 0 2px 20px aqua ;
-    text
 
 }
 
@@ -124,9 +123,6 @@ footer ul li {
     list-style: none;
     align-self: flex-end;
 }
-footer ul li a {
-
-}
 
 svg {
     width: 15%;
@@ -150,7 +146,7 @@ footer p {
         flex-direction: column;
     }
     .sidebar {
-        background: linear-gradient(,
+        background: linear-gradient(
             rgba(255, 255, 255, 1)
             rgba(97, 255, 255, 1)
             rgba(58, 217, 255, 1)
