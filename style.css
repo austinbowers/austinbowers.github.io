@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css?family=Cabin:300,400,700');
+body {
+    font-family: 'Cabin', sans-serif;
+    background: rgb(252, 255, 213);
+    
+
+}
+
+.container {
+    grid-area: content;
+    margin: 0;
+
+}
+
+.navigation {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+
+    float: left;
+    display: flex;
+    padding: 0px 0px;
+    box-shadow: 0 0px 30px rgb(228, 203, 166);
+    background: rgb(53, 53, 53);
+    color: rgb(228, 203, 166);
+    z-index: 1000;
+  }
+
+.navigation a {
+    color: rgb(228, 203, 166);
+    text-align: center;
+    padding: 10px 14px;
+    text-decoration: none;
+    transition: 0.3s;
+
+}
+
+.navigation a:hover {
+    background: #ddd;
+    color: black;
+
+}
+
+.navigation ul li {
+    display: inline;
+}
+
+
+
+.hero {
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding-top: 40px;
+}
+
+.hero img {
+    width: 100%;
+}
+
+.action-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(228, 203, 166);
+    font-weight: 700;
+    background: rgb(53, 53, 53);
+    padding: 1% 10%;
+    border-radius: 40px;
+    margin: 1em 0;
+    transition: 0.3s;
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+
+}
+
+.action-btn:hover {
+    box-shadow: 0 0px 50px  rgb(228, 203, 166);
+    background: rgba(53, 53, 53, 0.301);
+    color: rgb(228, 203, 166);
+}
+
+.news {
+
+
+overflow: hidden;
+background-color: #333;
+position: static; /* Set the navbar to fixed position */
+top: 0; /* Position the navbar at the top of the page */
+width: 100%; /* Full width */
+
+display: flex;
+padding: 0px 40px;
+box-shadow: 0 10px 50px rgb(228, 203, 166);
+background: rgb(53, 53, 53);
+color: rgb(228, 203, 166);
+z-index: 1000;
+font-weight: 100;
+
+}
