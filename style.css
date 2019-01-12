@@ -1,22 +1,27 @@
+html,body {
+    margin:0;
+    padding:0;
+}
+
 body {
     width: 100%;
     margin-top: 0;
     border: 0;
     outline: 0;
-    
+    overflow: hidden;
 
 }
 
+
 #nav ul {
-    background: black;
+    background: rgba(7, 18, 25, 80%);
     width: 100%;
     padding: 20px; 
-    position: static;
+    position: absolute;
     margin: 0;
     border: 0;
     outline: 0;
     display: table;
-    width: 100%;
     
 }
 
@@ -31,7 +36,8 @@ body {
 }
 
 #nav ul li img{
-    width: 180px;
+    width: 170px;
+    transform:scale(1.2, 1.2); 
 }
 
 #nav ul li a{
@@ -45,6 +51,8 @@ body {
 #top-bar {
     padding: 12px;
     margin: 0;
+    border:0;
+    outline: 0;
     width: 100%;
     background: white;
     font-family: helvetica;
@@ -100,3 +108,56 @@ div a {
     color: rgb(0, 0, 0);
 
 }
+
+#background {
+    background-image: url(images/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;  
+    height: 740px;
+}
+
+
+#background div p {
+    position: absolute;
+    text-align: center;
+}
+
+
+@media (max-width: 1040px) {
+    .container {
+        grid-template-areas:
+            "sidebar content"
+            "sidebar footer";
+        grid-template-columns: 300px 1fr;
+        grid-template-rows: 1fr auto;
+
+    }
+    #nav ul li{
+        display: none !important;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    #top-bar {
+        display: table-cell;
+        text-align: center;
+        position: relative;
+        flex-direction: column;
+        background-color: white; 
+    }
+
+
+    #img {
+        width: 22vh;
+        display: block;
+    }
+
+    
+    #float-left {
+        display: none !important;
+    }
+
+    #float-right {
+        display: none !important;
+    }
