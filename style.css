@@ -137,6 +137,11 @@ div a {
         grid-template-rows: 1fr auto;
 
     }
+
+    #nav ul{
+        background: rgba(7, 18, 25,)
+    }
+
     #nav ul li{
         display: block;
         text-align: center;
