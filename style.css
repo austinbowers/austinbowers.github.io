@@ -1,0 +1,102 @@
+body {
+    width: 100%;
+    margin-top: 0;
+    border: 0;
+    outline: 0;
+    
+
+}
+
+#nav ul {
+    background: black;
+    width: 100%;
+    padding: 20px; 
+    position: static;
+    margin: 0;
+    border: 0;
+    outline: 0;
+    display: table;
+    width: 100%;
+    
+}
+
+#nav ul li{
+    list-style-type: none;
+    display: table-cell;
+    text-align: center;
+    font-family: helvetica;
+    font-size: 14px;
+    color: white;
+    transform:scale(1,.8); 
+}
+
+#nav ul li img{
+    width: 180px;
+}
+
+#nav ul li a{
+    color: white;
+}
+
+#nav ul li a:hover{
+    color: rgb(0, 174, 255);
+}
+
+#top-bar {
+    padding: 12px;
+    margin: 0;
+    width: 100%;
+    background: white;
+    font-family: helvetica;
+    font-size: 14px;
+    transform:scale(1,.75); 
+}
+
+div a {
+    text-decoration: none;
+}
+
+
+
+#float-right-end {
+    float: right;
+    padding-left: 1.5em;
+    padding-right: 5em;
+    color: rgb(129, 129, 129);
+
+}
+
+#float-right-end:hover {
+    color: black;
+}
+
+
+#float-left {
+    color: rgb(129, 129, 129);
+    padding-left: 2.5em;
+
+}
+
+#float-left:hover {
+    color: black;
+}
+
+#float-right {
+    float: right;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    color: rgb(129, 129, 129);
+
+}
+
+#float-right:hover {
+    color: black;
+}
+
+#float-right-call {
+    float: right;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    color: rgb(0, 0, 0);
+
+}
