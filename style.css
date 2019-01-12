@@ -125,6 +125,10 @@ div a {
 
 
 @media (max-width: 1040px) {
+    body {
+        overflow: hidden;
+    }
+
     .container {
         grid-template-areas:
             "sidebar content"
@@ -134,8 +138,8 @@ div a {
 
     }
     #nav ul li{
-        display: none !important;
-        width: 100%;
+        display: block;
+        text-align: center;
         flex-direction: column;
     }
 
@@ -150,7 +154,7 @@ div a {
 
     #img {
         width: 22vh;
-        display: block;
+        display: none !important;
     }
 
     
@@ -159,5 +163,5 @@ div a {
     }
 
     #float-right {
-        display: none !important;
+
     }
