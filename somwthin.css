@@ -1,0 +1,46 @@
+@media (max-width: 1040px) {
+    body {
+        overflow: hidden;
+    }
+
+    .container {
+        grid-template-areas:
+            "sidebar content"
+            "sidebar footer";
+        grid-template-columns: 300px 1fr;
+        grid-template-rows: 1fr auto;
+
+    }
+
+    #nav ul{
+        background: rgba(7, 18, 25,)
+    }
+
+    #nav ul li{
+        display: block;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    #top-bar {
+        display: table-cell;
+        text-align: center;
+        position: relative;
+        flex-direction: column;
+        background-color: white; 
+    }
+
+
+    #img {
+        width: 22vh;
+        display: none !important;
+    }
+
+    
+    #float-left {
+        display: none !important;
+    }
+
+    #float-right {
+
+    }
