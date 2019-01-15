@@ -25,6 +25,10 @@ body {
     
 }
 
+#nav #menubar {
+    display: none;
+}
+
 #nav ul li{
     list-style-type: none;
     display: table-cell;
@@ -47,15 +51,18 @@ body {
     list-style-type: none;
     display: block;
     font-family: helvetica;
-    font-size: 14px;
+    font-size: 16px;
     color: white;
     transform:scale(1,.8); 
+    text-align: left;
+    border: solid;
+    border-color: rgba(60, 180, 255, 0.6)
 }
 
 #nav ul:hover ul {
     display: block;
     background: rgba(7, 18, 25, 60%);
-    width: 10%;
+    width: 250px;
     padding: 10px;
     margin-top: 40px;
 
@@ -170,13 +177,22 @@ div a {
     }
 
     #nav ul{
-        background: rgba(7, 18, 25,)
+        background: rgba(7, 18, 25,);
+        
     }
+
+    
+    #nav #menubar {
+        display: block;
+        width: 40px;
+    }
+
 
     #nav ul li{
         display: block;
         text-align: center;
         flex-direction: column;
+        display: none !important;
     }
 
     #top-bar {
@@ -186,7 +202,9 @@ div a {
         flex-direction: column;
         background-color: white; 
     }
-
+    #nav #menubar ul:hover{
+        display: block;
+    }
 
     #img {
         width: 22vh;
