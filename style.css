@@ -178,13 +178,13 @@ div a {
 
     #nav ul{
         background: rgba(7, 18, 25,);
-        
+        display: inline;
     }
 
     
     #nav #menubar {
         display: block;
-        width: 40px;
+        width: 80px;
     }
 
 
@@ -196,6 +196,8 @@ div a {
     }
 
     #top-bar {
+        font-size: 16px;
+        padding: 10px;
         display: table-cell;
         text-align: center;
         position: relative;
