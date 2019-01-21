@@ -4,7 +4,7 @@ body {
   margin: 0;
   border: 0;
   outline: 0;
-  font-family: BlinkMacSystemFont;
+  font-family: helvetica;
 
 }
 
@@ -215,8 +215,8 @@ display: none;
   .sidenav .closebtn {
     position: absolute;
     float: right;
-    top: -50px;
-    right: 30px;
+    top: -40px;
+    right: 50px;
     font-size: 36px;
     margin-left: 50px;
   }
