@@ -1,0 +1,157 @@
+html {
+
+}
+
+
+body {
+  padding-top: 0px;
+  margin: 0;
+  border: 0;
+  outline: 0;
+  font-family: BlinkMacSystemFont;
+
+}
+
+.nav {
+  background: white;
+  position: fixed;
+  width: 100%;
+  top: 0;
+
+}
+
+.navbar-header {
+  padding-top: 4vh;
+  padding-left: 9.5vh;
+}
+
+.navbar-header a{
+  display: inline;
+  text-decoration: none;
+  font-size: 3vh;
+  font-weight: 100;
+  color: black;
+
+}
+
+.background-img {
+  position: static;
+  background: url(images/mountain.jpg) 10%;
+  background-color: black;
+  height: 110vh;
+}
+
+
+#navbar {
+  padding-left: 3vh;
+  padding-bottom: 3vh;
+
+}
+
+#navbar ul {
+  display: inline;
+}
+
+#navbar ul li{
+  padding: 1vh;
+  display: inline-block;
+
+}
+
+#navbar ul li a{
+  text-decoration: none;
+  color: black;
+  font-size: 2vh;
+  font-weight: 100;
+  text-align: left;
+  margin: 0;
+  transition: 0.3s;
+
+}
+
+
+
+#navbar ul li a:hover {
+  color: rgb(4, 113, 255);
+  font-weight: 700;
+
+}
+
+
+.starter-template {
+  font-weight: 100;
+  padding: 35vh 15px;
+  text-align: center;
+  color: white;
+
+}
+
+.starter-template p {
+  text-align: center;
+  font-size: 3vh;
+  margin-left:auto;
+  margin-right:auto;
+  text-align:center;
+  width: 50%;
+
+}
+
+.starter-template h1 {
+  text-align: center;
+  font-size: 6vh;
+
+}
+
+.action-btn {
+  display: inline-block;
+  text-decoration: none;
+  color: rgb(53, 53, 53);
+  font-weight:500;
+  font-size: 2vh;
+  background: rgb(255, 255, 255);
+  padding: 0.5em 2em;
+  border-radius: 40px;
+  margin: 1em 0;
+  transition: 0.3s;
+
+}
+
+.action-btn:hover {
+  background: rgba(0, 0, 0, 0.562);
+  color: white;
+
+}
+
+#footer {
+  position: static;
+  background: white;
+  padding-bottom: 3vh;
+  text-align: center;
+
+}
+
+#footer ul {
+  padding-left: 1vh;
+}
+
+#footer ul li{
+  padding: 1vh;
+  display: inline-block;
+
+}
+
+#footer ul li a{
+  text-decoration: none;
+  color: black;
+  font-size: 2vh;
+  font-weight: 100;
+  margin: 0;
+  transition: 0.3s;
+
+}
+
+
+
+#footer ul li a:hover {
+  color: rgb(4, 113, 255);
+  font-weight: 700;
