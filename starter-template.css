@@ -21,11 +21,13 @@ body {
 }
 
 .navbar-header {
-  padding-top: 4vh;
-  padding-left: 9.5vh;
+  padding-top: 3vh;
+  padding-left: 5vh;
+  padding-bottom: 2vh;
 }
 
 .navbar-header a{
+
   display: inline;
   text-decoration: none;
   font-size: 3vh;
@@ -34,18 +36,22 @@ body {
 
 }
 
+.navbar-menu {
+display: none;
+}
+
 .background-img {
   position: static;
-  background: url(images/mountain.jpg) 10%;
+  background: url(images/mountain.jpg) 80% 90%;
   background-color: black;
-  height: 110vh;
+  height: 80vh;
 }
 
 
 #navbar {
-  padding-left: 3vh;
+  text-align: left;
   padding-bottom: 3vh;
-
+  padding-left: .5vh;
 }
 
 #navbar ul {
@@ -53,8 +59,10 @@ body {
 }
 
 #navbar ul li{
-  padding: 1vh;
-  display: inline-block;
+  display: inline;
+  padding-right: 40px;
+
+
 
 }
 
@@ -73,14 +81,15 @@ body {
 
 #navbar ul li a:hover {
   color: rgb(4, 113, 255);
-  font-weight: 700;
+  font-weight: 100;
 
 }
 
 
 .starter-template {
+  
   font-weight: 100;
-  padding: 35vh 15px;
+  padding: 25vh 15px;
   text-align: center;
   color: white;
 
@@ -92,7 +101,7 @@ body {
   margin-left:auto;
   margin-right:auto;
   text-align:center;
-  width: 50%;
+  width: 80%;
 
 }
 
@@ -131,6 +140,7 @@ body {
 }
 
 #footer ul {
+  padding-top: 0vh;
   padding-left: 1vh;
 }
 
@@ -140,18 +150,61 @@ body {
 
 }
 
-#footer ul li a{
+#footer ul li a img{
   text-decoration: none;
   color: black;
-  font-size: 2vh;
+  width: 20px;
   font-weight: 100;
   margin: 0;
-  transition: 0.3s;
+  padding-left: 2vh;
+  padding-right: 2vh;
 
 }
 
 
 
 #footer ul li a:hover {
-  color: rgb(4, 113, 255);
-  font-weight: 700;
+  font-weight: 100;
+}
+
+
+@media (max-width: 740px) {
+
+#navbar {
+  display: none;
+}
+
+.navbar-menu {
+  display: inline;
+  float: right;
+  width: 45px;
+  padding-bottom: 2vh;
+  padding-right: 3vh;
+}
+
+
+
+
+.navbar-header a{
+  display: none;
+}
+
+#footer {
+  position: static;
+  background: white;
+  padding-bottom: 3vh;
+  text-align: center;
+
+}
+#footer {
+  padding-top: 2vh;
+}
+.background-img {
+  position: static;
+  background: url(images/mountain.jpg) 80% 90%;
+  background-color: black;
+  height: 110vh;
+}
+
+
+}
