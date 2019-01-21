@@ -1,0 +1,257 @@
+
+body {
+  padding-top: 0px;
+  margin: 0;
+  border: 0;
+  outline: 0;
+  font-family: BlinkMacSystemFont;
+
+}
+
+.sidenav {
+    display: none;
+}
+
+ 
+  
+
+.nav {
+  background: white;
+  position: fixed;
+  width: 100%;
+  top: 0;
+
+}
+
+.navbar-header {
+  padding-top: 3vh;
+  padding-left: 5vh;
+  padding-bottom: 2vh;
+}
+
+.navbar-header a{
+
+  display: inline;
+  text-decoration: none;
+  font-size: 3vh;
+  font-weight: 100;
+  color: black;
+
+}
+
+.navbar-menu {
+display: none;
+}
+
+.background-img {
+  position: static;
+  background: url(images/mountain.jpg) 30% 80%;
+  background-color: black;
+  height: 200vh;
+}
+
+
+#navbar {
+  text-align: left;
+  padding-bottom: 3vh;
+  padding-left: .5vh;
+}
+
+#navbar ul {
+  display: inline;
+}
+
+#navbar ul li{
+  display: inline;
+  padding-right: 40px;
+
+
+
+}
+
+#navbar ul li a{
+  text-decoration: none;
+  color: black;
+  font-size: 2vh;
+  font-weight: 100;
+  text-align: left;
+  margin: 0;
+  transition: 0.3s;
+
+}
+
+
+
+#navbar ul li a:hover {
+  color: rgb(4, 113, 255);
+  font-weight: 100;
+
+}
+
+
+.starter-template {
+  
+  font-weight: 100;
+  padding: 25vh 15px;
+  text-align: center;
+  color: white;
+
+}
+
+.starter-template p {
+  font-size: 3vh;
+  margin-left:auto;
+  margin-right:auto;
+  text-align:center;
+  width: 80%;
+
+}
+
+.starter-template h1 {
+  text-align: center;
+  font-size: 6vh;
+
+}
+
+.action-btn {
+  display: inline-block;
+  text-decoration: none;
+  color: rgb(53, 53, 53);
+  font-weight:500;
+  font-size: 2vh;
+  background: rgb(255, 255, 255);
+  padding: 0.5em 2em;
+  border-radius: 40px;
+  margin: 1em 0;
+  transition: 0.3s;
+
+}
+
+.action-btn:hover {
+  background: rgba(0, 0, 0, 0.562);
+  color: white;
+
+}
+
+#footer {
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+  background: white;
+  padding-bottom: 3vh;
+  margin-left:auto;
+  margin-right:auto;
+  text-align:center;
+}
+
+#footer ul {
+  padding-top: 0vh;
+  padding-left: 1vh;
+}
+
+#footer ul li{
+  padding: 1vh;
+  display: inline-block;
+
+}
+
+#footer ul li a img{
+  text-decoration: none;
+  color: black;
+  width: 20px;
+  font-weight: 100;
+  margin: 0;
+  padding-left: 2vh;
+  padding-right: 2vh;
+
+}
+
+
+
+#footer ul li a:hover {
+  font-weight: 100;
+}
+
+
+@media (max-width: 740px) {
+
+#navbar {
+  display: none;
+}
+/* The side navigation menu */
+.sidenav {
+    display: inline;
+    height: 0; /* 100% Full-height */
+    width: 100%; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    color: white;
+    background-color: black; /* Black*/
+    overflow: hidden; /* Disable horizontal scroll */
+    padding-top: 0px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    padding-top: 10vh;
+    text-decoration: none;
+    text-align: center;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: aqua;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidenav .closebtn {
+    position: absolute;
+    float: right;
+    top: -70px;
+    right: 30px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+
+.navbar-menu {
+  display: inline;
+  float: right;
+  width: 45px;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  padding-right: 3vh;
+}
+
+
+
+
+.navbar-header {
+  display: none;
+}
+
+#footer {
+  background: white;
+  padding-bottom: 3vh;
+  text-align: center;
+  padding-top: 2vh;
+
+}
+
+.background-img {
+  position: static;
+  background: url(images/mountain.jpg) 80% 90%;
+  background-color: black;
+  height: 110vh;
+}
+
+
+}
