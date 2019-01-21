@@ -1,7 +1,3 @@
-html {
-
-}
-
 
 body {
   padding-top: 0px;
@@ -11,6 +7,12 @@ body {
   font-family: BlinkMacSystemFont;
 
 }
+
+.sidenav {
+  display: none;
+}
+
+
 
 .nav {
   background: white;
@@ -96,7 +98,6 @@ display: none;
 }
 
 .starter-template p {
-  text-align: center;
   font-size: 3vh;
   margin-left:auto;
   margin-right:auto;
@@ -132,11 +133,14 @@ display: none;
 }
 
 #footer {
-  position: static;
+
+  width: 100%;
   background: white;
   padding-bottom: 3vh;
-  text-align: center;
-
+  margin-left:auto;
+  margin-right:auto;
+  text-align:center;
+  z-index: 0;;
 }
 
 #footer ul {
@@ -173,11 +177,54 @@ display: none;
 #navbar {
   display: none;
 }
+/* The side navigation menu */
+.sidenav {
+  display: inline;
+  height: 0; /* 100% Full-height */
+  width: 100%; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  color: white;
+  background-color: black; /* Black*/
+  overflow: hidden; /* Disable horizontal scroll */
+  padding-top: 0px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  padding-top: 10vh;
+  text-decoration: none;
+  text-align: center;
+  font-size: 25px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: aqua;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  float: right;
+  top: -70px;
+  right: 30px;
+  font-size: 36px;
+  margin-left: 50px;
+}
 
 .navbar-menu {
   display: inline;
   float: right;
   width: 45px;
+  padding-top: 2vh;
   padding-bottom: 2vh;
   padding-right: 3vh;
 }
@@ -185,20 +232,18 @@ display: none;
 
 
 
-.navbar-header a{
+.navbar-header {
   display: none;
 }
 
 #footer {
-  position: static;
   background: white;
   padding-bottom: 3vh;
   text-align: center;
+  padding-top: 2vh;
 
 }
-#footer {
-  padding-top: 2vh;
-}
+
 .background-img {
   position: static;
   background: url(images/mountain.jpg) 80% 90%;
