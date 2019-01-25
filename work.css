@@ -5,7 +5,6 @@ body {
   border: 0;
   outline: 0;
   font-family: helvetica;
-
 }
 
 #navmain {
@@ -20,25 +19,34 @@ body {
 
  .container {
    position: static;
-   background: black;
+   background: white;
    padding: 16vh 4vh;
    width: 100%;
  }
 .row {
-  border: solid black 5px;
-  background: rgb(20, 20, 20);
+  border: solid white 5px;
+  background: rgb(29, 29, 29);
+  box-shadow: 0px 10px 30px; 
   padding: 2vh;
 }
 
  .col p {
   padding: 4vh;
   color: white;
+  text-align: left;
   }
+
+  .col h1 {
+    padding-top: 2vh;
+    color: white;
+    }
+
  .col img{
    float: left;
   width: 50%;
   padding: 4vh;
  }
+
 
 .nav {
   background: white;
@@ -316,6 +324,29 @@ display: none;
 .starter-template p{
   height: 200px;
 }
+
+.col p {
+  padding: 4vh;
+  color: white;
+  text-align: left;
+  }
+
+  .col h1 {
+    padding-top: 2vh;
+    color: white;
+    text-align: center;
+    }
+
+ .col img{
+   float: center;
+  width: 100%;
+  padding: 4vh;
+ }
+
+ .container {
+  padding-top: 12vh;
+}
+
 
 }
 

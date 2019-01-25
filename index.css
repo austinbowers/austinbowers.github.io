@@ -6,6 +6,7 @@ body {
   outline: 0;
   font-family: helvetica;
 
+
 }
 
 #navmain {
@@ -30,8 +31,10 @@ body {
  width: 100%;
 }
 
+
+
 .nav {
-  background: white;
+  background: rgb(255, 255, 255);
   position: fixed;
   width: 100%;
   padding-top: 1vh;
