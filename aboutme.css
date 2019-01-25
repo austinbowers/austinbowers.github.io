@@ -8,22 +8,42 @@ body {
 
 }
 
+#navmain {
+  top: 0;
+  transition: top 0.5s;
+}
+
+
 .sidenav {
-  display: none;
+    display: none;
 }
 
-#maincontent {
-  position: static;
-  background: url(images/mountain.jpg) 80% 80%;
-  padding: 16vh 4vh;
-  width: 100%;
-  max-height : 500vh;
+ #maincontent {
+   position: static;
+   background: black;
+   padding: 16vh 4vh;
+   width: 100%;
+ }
+.row {
+  border: solid black 5px;
+  background: rgb(20, 20, 20);
+  padding: 2vh;
 }
 
-.col img{
+ .col h1 {
+  padding: 4vh;
+  color: white;
+  }
 
- width: 100%;
-}
+  .col p {
+    color: white;
+    }
+
+ .col img{
+   float: left;
+  width: 50%;
+  padding: 4vh;
+ }
 
 .nav {
   background: white;
@@ -40,7 +60,6 @@ body {
   padding-bottom: 2.8vh;
 }
 
-
 .navbar-header a{
 
   display: inline;
@@ -55,8 +74,11 @@ body {
 display: none;
 }
 
-
-
+.background-img {
+  position: static;
+  background-color: black;
+  height: 200vh;
+}
 
 
 #navbar {
@@ -98,22 +120,25 @@ display: none;
 
 }
 
+#topspace {
+  height: 11vh;
+  background: white;
+}
+
 
 .starter-template {
+  
   font-weight: 100;
-  padding: 20vh 15px;
+  padding: 15vh 1.5vh;
+  padding-bottom: 0;
   text-align: center;
   color: white;
 
 }
 
 .starter-template p {
-  font-size: 3vh;
-  margin-left:auto;
-  margin-right:auto;
-  text-align:center;
-  width: 80%;
-
+  float: right;
+  width: 50%;
 }
 
 .starter-template h1 {
@@ -121,6 +146,14 @@ display: none;
   font-size: 6vh;
 
 }
+
+.starter-template img {
+  float: left;
+  width: 50%;
+  font-size: 6vh;
+
+}
+
 
 .action-btn {
   display: inline-block;
@@ -137,7 +170,6 @@ display: none;
 }
 
 .action-btn:hover {
-  text-decoration: none;
   background: rgba(0, 0, 0, 0.562);
   color: white;
 
@@ -195,46 +227,47 @@ display: none;
 }
 /* The side navigation menu */
 .sidenav {
-  display: inline;
-  height: 0; /* 100% Full-height */
-  width: 100%; /* 0 width - change this with JavaScript */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Stay on top */
-  top: 0; /* Stay at the top */
-  left: 0;
-  color: white;
-  background-color: black; /* Black*/
-  overflow: hidden; /* Disable horizontal scroll */
-  padding-top: 0px; /* Place content 60px from the top */
-  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
-}
-
-/* The navigation menu links */
-.sidenav a {
-  padding: 8px 8px 8px 32px;
-  padding-top: 10vh;
-  text-decoration: none;
-  text-align: center;
-  font-size: 25px;
-  color: white;
-  display: block;
-  transition: 0.3s;
-}
-
-/* When you mouse over the navigation links, change their color */
-.sidenav a:hover {
-  color: aqua;
-}
-
-/* Position and style the close button (top right corner) */
-.sidenav .closebtn {
-  position: absolute;
-  float: right;
-  top: -40px;
-  right: 50px;
-  font-size: 36px;
-  margin-left: 50px;
-}
+    display: inline;
+    height: 0; /* 100% Full-height */
+    width: 100%; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    color: white;
+    background-color: black; /* Black*/
+    overflow: hidden; /* Disable horizontal scroll */
+    padding-top: 0px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    padding-top: 10vh;
+    text-decoration: none;
+    text-align: center;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: aqua;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidenav .closebtn {
+    position: absolute;
+    float: right;
+    top: -40px;
+    right: 50px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
 
 .navbar-menu {
   display: inline;
@@ -245,15 +278,15 @@ display: none;
   padding-right: 4vh;
 }
 
-.starter-template {
-  padding-top: 8vh;
 
-}
 
 
 .navbar-header {
   display: none;
 }
+
+
+
 
 #footer {
   background: white;
@@ -263,15 +296,36 @@ display: none;
 
 }
 
-#footer #space{
-  display: none;
-
-}
-#maincontent {
-  background: url(images/mountain.jpg) 100% 90%;
+.background-img {
+  position: static;
   background-color: black;
-  max-height : 100vh;
+  height: 110vh;
 }
 
+.starter-template h1 {
+  float: left;
 
 }
+
+.starter-template img {
+  float: none;
+  width: 100%;
+  font-size: 6vh;
+  padding-bottom: 0;
+
+}
+
+.starter-template {
+  
+  font-weight: 100;
+  padding: 10.5vh 1.5vh;
+  text-align: center;
+  color: white;
+
+}
+.starter-template p{
+  height: 200px;
+}
+
+}
+
