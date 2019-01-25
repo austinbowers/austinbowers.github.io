@@ -8,6 +8,12 @@ body {
 
 }
 
+#navmain {
+  top: 0;
+  transition: top 1s;
+}
+
+
 .sidenav {
     display: none;
 }
@@ -20,6 +26,8 @@ body {
  }
 .row {
   border: solid white 1px;
+  background: rgb(20, 20, 20);
+  padding: 2vh;
 }
 
  .col p {
