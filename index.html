@@ -35,7 +35,18 @@
   <body>
 
     <nav>
-      <div class="nav">
+        <div class="nav" id="navmain">
+            <script type="application/javascript">
+            window.onscroll = function() {
+              var prevScrollpos = window.pageYOffset;
+              if (prevScrollpos <= 0) {
+                document.getElementById("navmain").style.top = "0";
+              } else {
+                document.getElementById("navmain").style.top = "-120px";
+             }
+             prevScrollpos;
+            }
+            </script>
         <div class="navbar-header">
           <a class="navbar-brand" href="#">Austin Bowers</a>
         </div>
