@@ -18,10 +18,18 @@ body {
    padding: 16vh 4vh;
    width: 100%;
  }
-  
+.row {
+  border: solid white 1px;
+}
+
+ .col p {
+  padding: 4vh;
+  color: white;
+  }
  .col img{
    float: left;
   width: 50%;
+  padding: 4vh;
  }
 
 .nav {
