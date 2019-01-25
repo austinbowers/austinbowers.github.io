@@ -12,21 +12,31 @@ body {
     display: none;
 }
 
- 
+ .container {
+   position: static;
+   background: black;
+   padding: 16vh 4vh;
+   width: 100%;
+ }
   
+ .col img{
+   float: left;
+  width: 50%;
+ }
 
 .nav {
   background: white;
   position: fixed;
   width: 100%;
-  top: 0;
+  padding-top: 1vh;
+  padding-bottom: 3.5vh;
 
 }
 
 .navbar-header {
-  padding-top: 3vh;
-  padding-left: 5vh;
-  padding-bottom: 2vh;
+  padding-top: .8vh;
+  padding-left: 3.2vh;
+  padding-bottom: 2.8vh;
 }
 
 .navbar-header a{
@@ -45,15 +55,16 @@ display: none;
 
 .background-img {
   position: static;
-  background: url(images/mountain.jpg) 30% 80%;
   background-color: black;
   height: 200vh;
 }
 
 
 #navbar {
+  position: absolute;
   text-align: left;
-  padding-bottom: 3vh;
+  padding-top: 7.2vh;
+  padding-bottom: 1.4vh;
   padding-left: .5vh;
 }
 
@@ -88,23 +99,25 @@ display: none;
 
 }
 
+#topspace {
+  height: 11vh;
+  background: white;
+}
+
 
 .starter-template {
   
   font-weight: 100;
-  padding: 25vh 15px;
+  padding: 15vh 1.5vh;
+  padding-bottom: 0;
   text-align: center;
   color: white;
 
 }
 
 .starter-template p {
-  font-size: 3vh;
-  margin-left:auto;
-  margin-right:auto;
-  text-align:center;
-  width: 80%;
-
+  float: right;
+  width: 50%;
 }
 
 .starter-template h1 {
@@ -112,6 +125,14 @@ display: none;
   font-size: 6vh;
 
 }
+
+.starter-template img {
+  float: left;
+  width: 50%;
+  font-size: 6vh;
+
+}
+
 
 .action-btn {
   display: inline-block;
@@ -173,7 +194,7 @@ display: none;
 }
 
 
-@media (max-width: 740px) {
+@media (max-width: 780px) {
 
 #navbar {
   display: none;
@@ -225,10 +246,10 @@ display: none;
 .navbar-menu {
   display: inline;
   float: right;
-  width: 45px;
-  padding-top: 2vh;
-  padding-bottom: 2vh;
-  padding-right: 3vh;
+  width: 8.5vh;
+  padding-top: 1.5vh;
+  padding-bottom: 0vh;
+  padding-right: 4vh;
 }
 
 
@@ -237,6 +258,9 @@ display: none;
 .navbar-header {
   display: none;
 }
+
+
+
 
 #footer {
   background: white;
@@ -248,10 +272,34 @@ display: none;
 
 .background-img {
   position: static;
-  background: url(images/mountain.jpg) 80% 90%;
   background-color: black;
   height: 110vh;
 }
 
+.starter-template h1 {
+  float: left;
 
 }
+
+.starter-template img {
+  float: none;
+  width: 100%;
+  font-size: 6vh;
+  padding-bottom: 0;
+
+}
+
+.starter-template {
+  
+  font-weight: 100;
+  padding: 10.5vh 1.5vh;
+  text-align: center;
+  color: white;
+
+}
+.starter-template p{
+  height: 200px;
+}
+
+}
+

@@ -9,25 +9,36 @@ body {
 }
 
 .sidenav {
-    display: none;
+  display: none;
 }
 
- 
-  
+.container {
+  position: static;
+  background: url(images/mountain.jpg) 80% 120%;
+  padding: 16vh 4vh;
+  width: 100%;
+}
+
+.col img{
+
+ width: 100%;
+}
 
 .nav {
   background: white;
   position: fixed;
   width: 100%;
-  top: 0;
+  padding-top: 1vh;
+  padding-bottom: 3.5vh;
 
 }
 
 .navbar-header {
-  padding-top: 3vh;
-  padding-left: 5vh;
-  padding-bottom: 2vh;
+  padding-top: .8vh;
+  padding-left: 3.2vh;
+  padding-bottom: 2.8vh;
 }
+
 
 .navbar-header a{
 
@@ -45,15 +56,17 @@ display: none;
 
 .background-img {
   position: static;
-  background: url(images/mountain.jpg) 30% 80%;
+  background: url(images/mountain.jpg) 80% 90%;
   background-color: black;
-  height: 200vh;
 }
 
 
+
 #navbar {
+  position: absolute;
   text-align: left;
-  padding-bottom: 3vh;
+  padding-top: 7.2vh;
+  padding-bottom: 1.4vh;
   padding-left: .5vh;
 }
 
@@ -90,9 +103,8 @@ display: none;
 
 
 .starter-template {
-  
   font-weight: 100;
-  padding: 25vh 15px;
+  padding: 20vh 15px;
   text-align: center;
   color: white;
 
@@ -128,20 +140,21 @@ display: none;
 }
 
 .action-btn:hover {
+  text-decoration: none;
   background: rgba(0, 0, 0, 0.562);
   color: white;
 
 }
 
 #footer {
-  bottom: 0;
-  position: absolute;
+
   width: 100%;
   background: white;
   padding-bottom: 3vh;
   margin-left:auto;
   margin-right:auto;
   text-align:center;
+  z-index: 0;;
 }
 
 #footer ul {
@@ -173,62 +186,61 @@ display: none;
 }
 
 
-@media (max-width: 740px) {
+@media (max-width: 780px) {
 
 #navbar {
   display: none;
 }
 /* The side navigation menu */
 .sidenav {
-    display: inline;
-    height: 0; /* 100% Full-height */
-    width: 100%; /* 0 width - change this with JavaScript */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Stay on top */
-    top: 0; /* Stay at the top */
-    left: 0;
-    color: white;
-    background-color: black; /* Black*/
-    overflow: hidden; /* Disable horizontal scroll */
-    padding-top: 0px; /* Place content 60px from the top */
-    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
-  }
-  
-  /* The navigation menu links */
-  .sidenav a {
-    padding: 8px 8px 8px 32px;
-    padding-top: 10vh;
-    text-decoration: none;
-    text-align: center;
-    font-size: 25px;
-    color: white;
-    display: block;
-    transition: 0.3s;
-  }
-  
-  /* When you mouse over the navigation links, change their color */
-  .sidenav a:hover {
-    color: aqua;
-  }
-  
-  /* Position and style the close button (top right corner) */
-  .sidenav .closebtn {
-    position: absolute;
-    float: right;
-    top: -40px;
-    right: 50px;
-    font-size: 36px;
-    margin-left: 50px;
-  }
-  
+  display: inline;
+  height: 0; /* 100% Full-height */
+  width: 100%; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  color: white;
+  background-color: black; /* Black*/
+  overflow: hidden; /* Disable horizontal scroll */
+  padding-top: 0px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  padding-top: 10vh;
+  text-decoration: none;
+  text-align: center;
+  font-size: 25px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: aqua;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  float: right;
+  top: -40px;
+  right: 50px;
+  font-size: 36px;
+  margin-left: 50px;
+}
 
 .navbar-menu {
   display: inline;
   float: right;
-  width: 45px;
-  padding-top: 2vh;
-  padding-bottom: 2vh;
-  padding-right: 3vh;
+  width: 8.5vh;
+  padding-top: 1.5vh;
+  padding-bottom: 0vh;
+  padding-right: 4vh;
 }
 
 

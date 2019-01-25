@@ -12,21 +12,33 @@ body {
   display: none;
 }
 
+.container {
+  position: static;
+  background: url(images/mountain.jpg) 80% 120%;
+  padding: 16vh 4vh;
+  width: 100%;
+}
 
+.col img{
+
+ width: 100%;
+}
 
 .nav {
   background: white;
   position: fixed;
   width: 100%;
-  top: 0;
+  padding-top: 1vh;
+  padding-bottom: 3.5vh;
 
 }
 
 .navbar-header {
-  padding-top: 3vh;
-  padding-left: 5vh;
-  padding-bottom: 2vh;
+  padding-top: .8vh;
+  padding-left: 3.2vh;
+  padding-bottom: 2.8vh;
 }
+
 
 .navbar-header a{
 
@@ -50,9 +62,12 @@ display: none;
 }
 
 
+
 #navbar {
+  position: absolute;
   text-align: left;
-  padding-bottom: 3vh;
+  padding-top: 7.2vh;
+  padding-bottom: 1.4vh;
   padding-left: .5vh;
 }
 
@@ -89,9 +104,8 @@ display: none;
 
 
 .starter-template {
-  
   font-weight: 100;
-  padding: 25vh 15px;
+  padding: 20vh 15px;
   text-align: center;
   color: white;
 
@@ -127,6 +141,7 @@ display: none;
 }
 
 .action-btn:hover {
+  text-decoration: none;
   background: rgba(0, 0, 0, 0.562);
   color: white;
 
@@ -172,7 +187,7 @@ display: none;
 }
 
 
-@media (max-width: 740px) {
+@media (max-width: 780px) {
 
 #navbar {
   display: none;
@@ -223,13 +238,16 @@ display: none;
 .navbar-menu {
   display: inline;
   float: right;
-  width: 45px;
-  padding-top: 2vh;
-  padding-bottom: 2vh;
-  padding-right: 3vh;
+  width: 8.5vh;
+  padding-top: 1.5vh;
+  padding-bottom: 0vh;
+  padding-right: 4vh;
 }
 
+.starter-template {
+  padding-top: 8vh;
 
+}
 
 
 .navbar-header {
@@ -248,7 +266,7 @@ display: none;
   position: static;
   background: url(images/mountain.jpg) 80% 90%;
   background-color: black;
-  height: 110vh;
+  height: 210vh;
 }
 
 
