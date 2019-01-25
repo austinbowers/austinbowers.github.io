@@ -12,11 +12,16 @@ body {
   display: none;
 }
 
-.container {
+#maincontent {
   position: static;
   background: url(images/mountain.jpg) 80% 120%;
   padding: 16vh 4vh;
-  width: 100%;
+  min-height : 100%;
+  min-width : 100%;
+  background-size:100% 100%;
+  background-repeat:no-repeat;
+  overflow-y: hidden;
+  overflow-x: hidden;
 }
 
 .col img{
@@ -54,12 +59,7 @@ body {
 display: none;
 }
 
-.background-img {
-  position: static;
-  background: url(images/mountain.jpg) 80% 90%;
-  background-color: black;
-  height: 80vh;
-}
+
 
 
 
@@ -148,14 +148,11 @@ display: none;
 }
 
 #footer {
-
+  position: static;
   width: 100%;
   background: white;
   padding-bottom: 3vh;
-  margin-left:auto;
-  margin-right:auto;
   text-align:center;
-  z-index: 0;;
 }
 
 #footer ul {
@@ -169,15 +166,23 @@ display: none;
 
 }
 
+#footer #email {
+  padding-top: 5vh;
+}
+
+#footer p {
+  padding: 1vh;
+  display: block;
+
+}
+
 #footer ul li a img{
   text-decoration: none;
   color: black;
-  width: 20px;
-  font-weight: 100;
-  margin: 0;
-  padding-left: 2vh;
-  padding-right: 2vh;
-
+  width: 50px;
+  text-align:center;
+  padding: 2vh;
+  padding-top: 1vh;
 }
 
 
@@ -262,11 +267,14 @@ display: none;
 
 }
 
-.background-img {
-  position: static;
-  background: url(images/mountain.jpg) 80% 90%;
+#footer #space{
+  display: none;
+
+}
+#maincontent {
+  background: url(images/mountain.jpg) 100% 90%;
   background-color: black;
-  height: 210vh;
+  max-height : 100vh;
 }
 
 
