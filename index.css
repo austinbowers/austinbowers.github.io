@@ -8,10 +8,9 @@ body {
 
 }
 
-
 #navmain {
-  top: 0;
-  transition: top 0.5s;
+  top: 0 ;
+  transition: top 0.5s ; 
 }
 
 .sidenav {
