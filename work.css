@@ -1,10 +1,16 @@
 
+
+html {
+  scroll-behavior: smooth;
+}
+
+
 body {
   padding-top: 0px;
   margin: 0;
   border: 0;
   outline: 0;
-  font-family: helvetica;
+  font-family: 'Quicksand' , sans-serif;
 }
 
 #navmain {
@@ -19,12 +25,12 @@ body {
 
  .container {
    position: static;
-   background: white;
+   background: rgb(66, 66, 66);
    padding: 16vh 4vh;
    width: 100%;
  }
 .row {
-  border: solid white 5px;
+  border: solid rgb(46, 46, 46) 5px;
   background: rgb(29, 29, 29);
   box-shadow: 0px 10px 30px; 
   padding: 2vh;
@@ -48,8 +54,8 @@ body {
  }
 
 
-.nav {
-  background: white;
+ .nav {
+  background: rgba(255, 255, 255, 0);
   position: fixed;
   width: 100%;
   padding-top: 1vh;
@@ -59,9 +65,10 @@ body {
 
 .navbar-header {
   padding-top: .8vh;
-  padding-left: 3.2vh;
+  padding-left: 3.4vh;
   padding-bottom: 2.8vh;
 }
+
 
 .navbar-header a{
 
@@ -69,7 +76,7 @@ body {
   text-decoration: none;
   font-size: 3vh;
   font-weight: 100;
-  color: black;
+  color: rgb(255, 255, 255);
 
 }
 
@@ -77,11 +84,8 @@ body {
 display: none;
 }
 
-.background-img {
-  position: static;
-  background-color: black;
-  height: 200vh;
-}
+
+
 
 
 #navbar {
@@ -106,7 +110,7 @@ display: none;
 
 #navbar ul li a{
   text-decoration: none;
-  color: black;
+  color: rgb(255, 255, 255);
   font-size: 2vh;
   font-weight: 100;
   text-align: left;
@@ -123,17 +127,10 @@ display: none;
 
 }
 
-#topspace {
-  height: 11vh;
-  background: white;
-}
-
 
 .starter-template {
-  
   font-weight: 100;
-  padding: 15vh 1.5vh;
-  padding-bottom: 0;
+  padding: 20vh 15px;
   text-align: center;
   color: white;
 
@@ -264,6 +261,10 @@ display: none;
     right: 50px;
     font-size: 36px;
     margin-left: 50px;
+  }
+
+  #onpage {
+    color: aquamarine;
   }
   
 

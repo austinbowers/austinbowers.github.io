@@ -1,10 +1,16 @@
 
+
+html {
+  scroll-behavior: smooth;
+}
+
+
 body {
   padding-top: 0px;
   margin: 0;
   border: 0;
   outline: 0;
-  font-family: helvetica;
+  font-family: 'Quicksand' , sans-serif;
 
 }
 
@@ -46,8 +52,8 @@ body {
   padding: 4vh;
  }
 
-.nav {
-  background: white;
+ .nav {
+  background: rgba(255, 255, 255, 0);
   position: fixed;
   width: 100%;
   padding-top: 1vh;
@@ -57,9 +63,10 @@ body {
 
 .navbar-header {
   padding-top: .8vh;
-  padding-left: 3.2vh;
+  padding-left: 3.4vh;
   padding-bottom: 2.8vh;
 }
+
 
 .navbar-header a{
 
@@ -67,7 +74,7 @@ body {
   text-decoration: none;
   font-size: 3vh;
   font-weight: 100;
-  color: black;
+  color: rgb(255, 255, 255);
 
 }
 
@@ -75,11 +82,8 @@ body {
 display: none;
 }
 
-.background-img {
-  position: static;
-  background-color: black;
-  height: 200vh;
-}
+
+
 
 
 #navbar {
@@ -104,7 +108,7 @@ display: none;
 
 #navbar ul li a{
   text-decoration: none;
-  color: black;
+  color: rgb(255, 255, 255);
   font-size: 2vh;
   font-weight: 100;
   text-align: left;
@@ -121,22 +125,14 @@ display: none;
 
 }
 
-#topspace {
-  height: 11vh;
-  background: white;
-}
-
 
 .starter-template {
-  
   font-weight: 100;
-  padding: 15vh 1.5vh;
-  padding-bottom: 0;
+  padding: 20vh 15px;
   text-align: center;
   color: white;
 
 }
-
 .starter-template p {
   float: right;
   width: 50%;
@@ -269,6 +265,9 @@ display: none;
     margin-left: 50px;
   }
   
+  #onpage {
+    color: aquamarine;
+  }
 
 .navbar-menu {
   display: inline;
@@ -297,6 +296,11 @@ display: none;
 
 }
 
+#footer ul li a img{
+  padding: 15px;
+}
+
+
 .background-img {
   position: static;
   background-color: black;
@@ -319,11 +323,18 @@ display: none;
 .starter-template {
   
   font-weight: 100;
-  padding: 10.5vh 1.5vh;
+  padding-top: 0vh;
   text-align: center;
   color: white;
 
 }
+
+#maincontent {
+  padding-top: 4vh;
+}
+
+
+
 .starter-template p{
   height: 200px;
 }

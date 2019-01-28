@@ -1,10 +1,14 @@
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   padding-top: 0px;
   margin: 0;
   border: 0;
   outline: 0;
-  font-family: helvetica;
+  font-family: 'Quicksand' , sans-serif;
 
 
 }
@@ -34,7 +38,7 @@ body {
 
 
 .nav {
-  background: rgb(255, 255, 255);
+  background: rgba(255, 255, 255, 0);
   position: fixed;
   width: 100%;
   padding-top: 1vh;
@@ -44,7 +48,7 @@ body {
 
 .navbar-header {
   padding-top: .8vh;
-  padding-left: 3.2vh;
+  padding-left: 3.4vh;
   padding-bottom: 2.8vh;
 }
 
@@ -55,7 +59,7 @@ body {
   text-decoration: none;
   font-size: 3vh;
   font-weight: 100;
-  color: black;
+  color: rgb(255, 255, 255);
 
 }
 
@@ -89,7 +93,7 @@ display: none;
 
 #navbar ul li a{
   text-decoration: none;
-  color: black;
+  color: rgb(255, 255, 255);
   font-size: 2vh;
   font-weight: 100;
   text-align: left;
@@ -120,6 +124,7 @@ display: none;
   margin-left:auto;
   margin-right:auto;
   text-align:center;
+  padding-bottom: 4vh;
   width: 80%;
 
 }
@@ -134,7 +139,7 @@ display: none;
   display: inline-block;
   text-decoration: none;
   color: rgb(53, 53, 53);
-  font-weight:500;
+  font-weight:800;
   font-size: 2vh;
   background: rgb(255, 255, 255);
   padding: 0.5em 2em;
@@ -174,6 +179,8 @@ display: none;
   padding-top: 5vh;
 }
 
+
+
 #footer p {
   padding: 1vh;
   display: block;
@@ -185,7 +192,7 @@ display: none;
   color: black;
   width: 50px;
   text-align:center;
-  padding: 2vh;
+  padding: 1.5vh;
   padding-top: 1vh;
 }
 
@@ -219,8 +226,7 @@ display: none;
 
 /* The navigation menu links */
 .sidenav a {
-  padding: 8px 8px 8px 32px;
-  padding-top: 10vh;
+  padding-top: 12vh;
   text-decoration: none;
   text-align: center;
   font-size: 25px;
@@ -239,9 +245,13 @@ display: none;
   position: absolute;
   float: right;
   top: -40px;
-  right: 50px;
+  right: 30px;
   font-size: 36px;
   margin-left: 50px;
+}
+
+#onpage {
+  color: aquamarine;
 }
 
 .navbar-menu {
@@ -254,7 +264,7 @@ display: none;
 }
 
 .starter-template {
-  padding-top: 8vh;
+  padding-top: 3.3vh;
 
 }
 
@@ -273,10 +283,13 @@ display: none;
 
 #footer #space{
   display: none;
-
 }
+#footer ul li a img{
+  padding: 15px;
+}
+
 #maincontent {
-  background: url(images/mountain.jpg) 100% 90%;
+  background: url(images/mountain.jpg) 100% 80%;
   background-color: black;
   max-height : 100vh;
 }

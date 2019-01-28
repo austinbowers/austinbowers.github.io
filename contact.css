@@ -1,10 +1,16 @@
 
+
+html {
+  scroll-behavior: smooth;
+}
+
+
 body {
   padding-top: 0px;
   margin: 0;
   border: 0;
   outline: 0;
-  font-family: helvetica;
+  font-family: 'Quicksand' , sans-serif;
 
 }
 
@@ -31,7 +37,7 @@ body {
 }
 
 .nav {
-  background: white;
+  background: rgba(255, 255, 255, 0);
   position: fixed;
   width: 100%;
   padding-top: 1vh;
@@ -41,7 +47,7 @@ body {
 
 .navbar-header {
   padding-top: .8vh;
-  padding-left: 3.2vh;
+  padding-left: 3.4vh;
   padding-bottom: 2.8vh;
 }
 
@@ -52,7 +58,7 @@ body {
   text-decoration: none;
   font-size: 3vh;
   font-weight: 100;
-  color: black;
+  color: rgb(255, 255, 255);
 
 }
 
@@ -86,7 +92,7 @@ display: none;
 
 #navbar ul li a{
   text-decoration: none;
-  color: black;
+  color: rgb(255, 255, 255);
   font-size: 2vh;
   font-weight: 100;
   text-align: left;
@@ -111,7 +117,6 @@ display: none;
   color: white;
 
 }
-
 .starter-template p {
   font-size: 3vh;
   margin-left:auto;
@@ -241,6 +246,10 @@ display: none;
   margin-left: 50px;
 }
 
+#onpage {
+  color: aquamarine;
+}
+
 .navbar-menu {
   display: inline;
   float: right;
@@ -251,7 +260,7 @@ display: none;
 }
 
 .starter-template {
-  padding-top: 8vh;
+  padding-top: 4vh;
 
 }
 
@@ -266,6 +275,10 @@ display: none;
   text-align: center;
   padding-top: 2vh;
 
+}
+
+#footer ul li a img{
+  padding: 15px;
 }
 
 #footer #space{
