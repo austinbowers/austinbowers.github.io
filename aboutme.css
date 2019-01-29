@@ -120,7 +120,7 @@ display: none;
 
 
 #navbar ul li a:hover {
-  color: rgb(4, 113, 255);
+  color: aquamarine;
   font-weight: 100;
 
 }
@@ -330,7 +330,7 @@ display: none;
 }
 
 #maincontent {
-  padding-top: 4vh;
+  padding-top: 10vh;
 }
 
 

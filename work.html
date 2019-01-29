@@ -40,9 +40,9 @@
           window.onscroll = function() {
             var prevScrollpos = window.pageYOffset;
             if (prevScrollpos <= 0) {
-              document.getElementById("navmain").style.top = "0";
+              document.getElementById("navmain", "myBtn").style.top = "0";
             } else {
-              document.getElementById("navmain").style.top = "-120px";
+              document.getElementById("navmain", "myBtn").style.top = "-120px";
            }
            prevScrollpos;
           }
@@ -88,59 +88,76 @@
             <div class="row">
               <div class="col">
                 <img src="images/work/CruiseDirector_Finished_Model4.png">
+                <img src="images/work/CruiseDirector_Finished_Model1.png">
               </div>
               <div class="col">
                 <h1>Webpage Mockup UI/UX Design</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam consectetur felis justo, sed tristique dui lacinia tempor. Donec nec euismod augue, eget varius massa. Vestibulum finibus, purus non aliquet sagittis, lorem mauris tristique odio, sed dapibus neque erat sit amet turpis. Sed et dolor sed risus volutpat fermentum nec quis diam. Nam tristique pretium metus ut tincidunt. Phasellus ut purus mi. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc at ligula auctor turpis sagittis scelerisque. Aliquam erat volutpat. Etiam maximus arcu libero, sit amet gravida nibh porttitor at. Vestibulum sit amet quam euismod, tristique ante non, fermentum ipsum. Vivamus dignissim ligula ut viverra lacinia. Pellentesque fringilla accumsan venenatis. Etiam viverra neque risus, luctus egestas odio vulputate id.</p>
+                <p>While interning for International Voyager Inc. (a travel agency that runs top rated booking websites), 
+                  I overheard the head of the company say they were looking for a new design on one of their sites. In my spare time, I researched
+                  a variety of cruise websites that they enjoyed, and tried to create a similar design based off of these sites. I stepped up to
+                   the plate to take on the task in my free time from work, and designed a mockup front page for their
+                    website for <a href="https://www.cruisedirector.com">Cruise Director</a> (a site offering discounted rates on luxury cruiselines).
+                </p>
               </div>
             </div>
-            <div class="row">
-                <div class="col">
-                  <img src="images/work/CruiseDirector_Finished_Model1.png">
-                </div>
-                <div class="col">
-                    <h1>Work</h1>
-                  <p>Work</p>
-                </div>
-              </div>
               <div class="row">
                   <div class="col">
-                    <img src="images/work/leaves.jpeg">
+                    <img src="images/work/sunshineseries-front.jpg"><img src="images/work/sunshineseries-back.jpg">
                   </div>
                   <div class="col">
-                      <h1>Work</h1>
-                    <p>Work</p>
+                    <img src="images/work/SunshineSeriesFinalHostedby.png">
+                      <h1 id="sushineseries">Sunshine Series Logo Design</h1>
+                    <p>Sahara Moon, an incredible singer and song-writer who combines a style of blues, jazz, and folk hosts
+                       an event called "The Sunshine Series". "The Sunshine Series" features other artists around the world and gives them 
+                       the opportunity to spread their music. Sahara was looking for a fun new logo design that she could 
+                       put on T-shirts, so I designed her a logo that emphasized sunshine, and added some water to remind us that this
+                        event takes place on Long Beach Island, a place full of art, music, inspiration, and excitement.
+                        You can find more information about "The Sunshine Series" on <a href="https://saharamoonmusic.com/the-sunshine-series">Sahara Moon's website</a>
+                    </p>
                   </div>
                 </div>
                 <div class="row">
                     <div class="col">
-                      <img src="images/work/CruiseDirector_Finished_Model4.png">
+                        <img src="images/work/saharamoon12.jpg">
+                        <img src="images/work/saharamoon13blue.jpg">
                     </div>
                     <div class="col">
-                        <h1>Work</h1>
-                      <p>Work</p>
+                        <h1>Poster Design for Sahara Moon</h1>
+                      <p>If you haven't heard Sahara Moon yet, you're missing out!
+                        This incredible singer and song-writer is reminiscent to Norah Jones, while offering her own 
+                        indie twist creating a fusion of jazz, blues, and folk. I had the pleasure of walking in on one of
+                         Sahara Moon's live performances over the summer of 2018, and the second I walked through the door, I was blown away.
+                          With a name like that, I could not resist designing a fun poster for her or her fans. Here is my design. I highly recommend
+                           checking out <a href="https://www.saharamoonmusic.com">Sahara Moon's website</a>
+                      </p>
                     </div>
                   </div>
                   <div class="row">
                       <div class="col">
-                        <img src="images/work/leaves.jpeg">
+                        <img src="images/work/JimHendrix.jpg">
+                        <img src="images/work/FrankSinatra.jpg">
+                        <img src="images/work/JerryGarcia_Small.jpg">
+                        <img src="images/work/Lennon.jpg">
                       </div>
                       <div class="col">
-                          <h1>Work</h1>
-                        <p>Work</p>
+                          <h1>Vintage Posters</h1>
+                        <p>Here are some poster designs I created of musicians who I really enjoy. Each
+                           poster is inspired by a certain song or idea that the musician revolves around.
+                           For example, Jimi Hendrix's "Purple Haze", Jerry Garcia's "Scarlet Begonia", Frank Sinatra's "Fly Me to the Moon"...
+                        </p>
                       </div>
                     </div>
-                    <div class="row">
-                        <div class="col">
-                          <img src="images/work/leaves.jpeg">
-                        </div>
-                        <div class="col">
-                            <h1>Work</h1>
-                          <p>Work</p>
-                        </div>
-                      </div>
-    </div><!-- /.container -->
 
+    </div><!-- /.container -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Back to Top</button>
+    <script type="application/javascript">
+
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+       document.body.scrollTop = 0; // For Safari
+       document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+      }
+    </script>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->

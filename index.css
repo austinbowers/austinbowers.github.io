@@ -13,6 +13,8 @@ body {
 
 }
 
+
+
 #navmain {
   top: 0 ;
   transition: top 0.5s ; 
@@ -79,6 +81,8 @@ display: none;
   padding-left: .5vh;
 }
 
+
+
 #navbar ul {
   display: inline;
 }
@@ -105,7 +109,7 @@ display: none;
 
 
 #navbar ul li a:hover {
-  color: rgb(4, 113, 255);
+  color: aquamarine;
   font-weight: 100;
 
 }
@@ -289,7 +293,7 @@ display: none;
 }
 
 #maincontent {
-  background: url(images/mountain.jpg) 100% 80%;
+  background: url(images/mountain.jpg) 80% 80%;
   background-color: black;
   max-height : 100vh;
 }
