@@ -91,13 +91,38 @@
                 </div>
                 <div class="col">
                   <h1>About Me</h1>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tincidunt ipsum non condimentum ullamcorper. Curabitur porttitor elementum eros. Quisque in quam at elit porta vulputate non sed turpis. Praesent euismod quis velit vel fermentum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Phasellus vitae turpis vitae est dignissim porta ac et quam. Pellentesque venenatis dui vel mauris lobortis semper. Ut eleifend at tellus quis dictum. Aenean vitae sapien ut nunc pellentesque vehicula sit amet ut nulla. Nullam odio erat, cursus sed maximus a, scelerisque vitae ligula. Donec id sapien enim. Nullam eu faucibus tortor. Aenean congue aliquet massa, et convallis ante blandit vitae.
+                  <p id="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tincidunt ipsum non condimentum ullamcorper. Curabitur porttitor elementum eros. Quisque in quam at elit porta vulputate non sed turpis. Praesent euismod quis velit vel fermentum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Phasellus vitae turpis vitae est dignissim porta ac et quam. Pellentesque venenatis dui vel mauris lobortis semper. Ut eleifend at tellus quis dictum. Aenean vitae sapien ut nunc pellentesque vehicula sit amet ut nulla. Nullam odio erat, cursus sed maximus a, scelerisque vitae ligula. Donec id sapien enim. Nullam eu faucibus tortor. Aenean congue aliquet massa, et convallis ante blandit vitae.
 
                       Cras metus quam, efficitur eu condimentum eget, interdum id urna. Sed malesuada vitae nisi non ultricies. Maecenas et pretium dolor. Cras sit amet felis eleifend, dictum lorem eget, pulvinar ante. Etiam placerat odio sit amet nisl tincidunt egestas. Praesent elementum blandit purus, a semper velit varius ut. Aliquam a metus bibendum, congue libero nec, molestie arcu. Aenean accumsan tristique quam et pellentesque. In congue turpis eu risus porta commodo. Maecenas ornare at sem vitae finibus. Maecenas eleifend faucibus quam, eget aliquam metus pellentesque ac.
                     </p>    
+                    <span id="viewmore" onclick="myFunction()"><a href="javascript:void(0)" id="clickMe">View More</a></span>
+                    <p id="paragraphTwo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tincidunt ipsum non condimentum ullamcorper. Curabitur porttitor elementum eros. Quisque in quam at elit porta vulputate non sed turpis. Praesent euismod quis velit vel fermentum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Phasellus vitae turpis vitae est dignissim porta ac et quam. Pellentesque venenatis dui vel mauris lobortis semper. Ut eleifend at tellus quis dictum. Aenean vitae sapien ut nunc pellentesque vehicula sit amet ut nulla. Nullam odio erat, cursus sed maximus a, scelerisque vitae ligula. Donec id sapien enim. Nullam eu faucibus tortor. Aenean congue aliquet massa, et convallis ante blandit vitae.
+
+                        Cras metus quam, efficitur eu condimentum eget, interdum id urna. Sed malesuada vitae nisi non ultricies. Maecenas et pretium dolor. Cras sit amet felis eleifend, dictum lorem eget, pulvinar ante. Etiam placerat odio sit amet nisl tincidunt egestas. Praesent elementum blandit purus, a semper velit varius ut. Aliquam a metus bibendum, congue libero nec, molestie arcu. Aenean accumsan tristique quam et pellentesque. In congue turpis eu risus porta commodo. Maecenas ornare at sem vitae finibus. Maecenas eleifend faucibus quam, eget aliquam metus pellentesque ac.
+                      </p>    
+                      <span id="viewless" onclick="closeFunction()"><a href="javascript:void(0)" id="clickMe">View Less</a></span>
+                    <script type="application/javascript">
+
+                      function myFunction() {
+                       document.getElementById("paragraphTwo").style.display = "block";
+                       
+                       document.getElementById("viewmore").style.display = "none";
+
+                       document.getElementById("viewless").style.display = "block";
+
+                        }
+                        function closeFunction() {
+                       document.getElementById("paragraphTwo").style.display= "none";
+
+                       document.getElementById("viewmore").style.display = "block";
+
+                       document.getElementById("viewless").style.display = "none";
+                        }
+                      </script>
                     </div>
             </div>
-    </div><!-- /.container -->
+
+    </div> <!--/.container -->
   </div>
   <div class="container" id="footer">
       <p id="email"><span class="glyphicon glyphicon-envelope"> austin.bowers75@gmail.com</p>

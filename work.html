@@ -88,6 +88,32 @@
             <div class="row">
               <div class="col">
                   <h1>Webpage Mockup UI/UX Design</h1>
+                  <div class="col">
+                      <img src="images/work/CruiseDirector_Finished_Model4.png">
+                      <span id="viewmoreTwo" onclick="myFunctionTwo()"><a href="javascript:void(0)" id="clickMe">View More</a></span>
+                      <div id="imagesTwo">
+                          <img src="images/work/CruiseDirector_Finished_Model1.png">
+                        <span id="viewlessTwo" onclick="closeFunctionTwo()"><a href="javascript:void(0)" id="clickMe">View Less</a></span>
+                         </div>
+                         <script type="application/javascript">
+
+                          function myFunctionTwo() {
+                           document.getElementById("imagesTwo").style.width = "100%";
+                           
+                           document.getElementById("viewmoreTwo").style.display = "none";
+
+                           document.getElementById("viewlessTwo").style.display = "block";
+
+                            }
+                            function closeFunctionTwo() {
+                           document.getElementById("imagesTwo").style.width = "0%";
+
+                           document.getElementById("viewmoreTwo").style.display = "block";
+
+                           document.getElementById("viewlessTwo").style.display = "none";
+                            }
+                        </script>
+                  </div>
                   <p>While interning for International Voyager Inc. (a travel agency that runs top rated booking websites), 
                     I overheard the head of the company say they were looking for a new design on one of their sites. In my spare time, I researched
                     a variety of cruise websites that they enjoyed, and tried to create a similar design based off of these sites. I stepped up to
@@ -95,19 +121,16 @@
                       website for Cruise Director (a site offering discounted rates on luxury cruiselines).
                   </p>
             </div>
-              <div class="col">
-                  <img src="images/work/CruiseDirector_Finished_Model4.png">
-                  <img src="images/work/CruiseDirector_Finished_Model1.png">
-   
-              </div>
+
             </div>
               <div class="row">
                   <div class="col">
+                      <h1 id="sushineseries">Sunshine Series Logo Design</h1>
                     <img src="images/work/redtee.jpg"><img src="images/work/bluetee.jpg">
                   </div>
                   <div class="col">
                     <img src="images/work/SunshineSeriesFinalHostedby.png">
-                      <h1 id="sushineseries">Sunshine Series Logo Design</h1>
+
                     <p>"The Sunshine Series" hosted by Sahara Moon features other artists around the world and gives them 
                        the opportunity to spread their music. Sahara was looking for a fun new logo design that she could 
                        put on T-shirts, so I designed her a logo that emphasized sunshine, and added some water to remind us that this
@@ -123,13 +146,37 @@
                              For example, Jimi Hendrix's "Purple Haze", Jerry Garcia's "Scarlet Begonia", Frank Sinatra's "Fly Me to the Moon"...
                           </p>
                       </div>
+
                       <div class="col">
                           <img src="images/work/JimHendrix.jpg">
                           <img src="images/work/FrankSinatra.jpg">
-                          <img src="images/work/JerryGarcia_Small.jpg">
-                          <img src="images/work/Lennon.jpg">
-                          <img src="images/work/saharamoon12.jpg">
-                          <img src="images/work/saharamoon13blue.jpg">
+                          <span id="viewmore" onclick="myFunction()"><a href="javascript:void(0)" id="clickMe">View More</a></span>
+                           <div id="images">
+                             <img src="images/work/JerryGarcia_Small.jpg">
+                             <img src="images/work/Lennon.jpg">
+                             <img src="images/work/saharamoon12.jpg">
+                             <img src="images/work/saharamoon13blue.jpg">
+                             <span id="viewless" onclick="closeFunction()"><a href="javascript:void(0)" id="clickMe">View Less</a></span>
+                              </div>
+                          </div>
+                          <script type="application/javascript">
+
+                            function myFunction() {
+                             document.getElementById("images").style.width = "100%";
+                             
+                             document.getElementById("viewmore").style.display = "none";
+
+                             document.getElementById("viewless").style.display = "block";
+
+                              }
+                              function closeFunction() {
+                             document.getElementById("images").style.width = "0%";
+
+                             document.getElementById("viewmore").style.display = "block";
+
+                             document.getElementById("viewless").style.display = "none";
+                              }
+                          </script>
                       </div>
                     </div>
 

@@ -38,7 +38,7 @@ body {
 }
 
  .col p {
-  padding: 6vh;
+  padding: 4vh;
   color: white;
   text-align: left;
   font-size: 2.4vh;
@@ -84,12 +84,42 @@ body {
 
 }
 
-.navbar-menu {
-display: none;
+ .navbar-menu {
+  display: none;
+ }
+
+#images {
+  width: 0%;
 }
 
+#viewmoreTwo {
+  display: none;
+
+}
+
+#viewlessTwo {
+  display: none;
 
 
+}
+
+#viewmore {
+  display: block;
+  font-size: 3vh;
+  margin-left:auto;
+  margin-right:auto;
+  text-align:center;
+  padding-bottom: 0;
+}
+
+#viewless {
+  display: none;
+  font-size: 3vh;
+  margin-left:auto;
+  margin-right:auto;
+  text-align:center;
+  padding-bottom: 0;
+}
 
 
 #navbar {
@@ -378,7 +408,26 @@ display: none;
   padding: 3px;
   font-size: 10px;
 }
+#imagesTwo {
+  width: 0%;
+}
 
+#viewmoreTwo {
+  display: block;
+  font-size: 3vh;
+  margin-left:auto;
+  margin-right:auto;
+  text-align:center;
+  padding-bottom: 0;
+}
+
+#viewlessTwo {
+  display: none;
+  font-size: 3vh;
+  margin-left:auto;
+  margin-right:auto;
+  text-align:center;
+  padding-bottom: 0;
 
 }
 
