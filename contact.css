@@ -43,6 +43,10 @@ input[type=text], textarea {
   color: white;
 }
 
+#coltwo input{
+  color: black;
+}
+
 .col {
 
   text-align: center;
