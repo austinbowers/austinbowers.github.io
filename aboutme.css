@@ -29,6 +29,7 @@ body {
   margin-right:auto;
   text-align:center;
   padding-bottom: 0;
+  padding: 2vh;
 }
 
 #viewless {
@@ -38,6 +39,7 @@ body {
   margin-right:auto;
   text-align:center;
   padding-bottom: 0;
+  padding: 2vh;
 }
 
 
@@ -351,8 +353,12 @@ display: none;
 
 #maincontent {
   padding-top: 10vh;
+  width: 100%;
 }
 
+#viewmore {
+  padding: 2vh;
+}
 
 
 .starter-template p{
