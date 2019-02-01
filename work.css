@@ -11,6 +11,7 @@ body {
   border: 0;
   outline: 0;
   font-family: 'Quicksand' , sans-serif;
+  background-color: rgb(54, 54, 54);
 }
 
 #navmain {
@@ -27,7 +28,7 @@ body {
    position: static;
    background-color: rgb(54, 54, 54);
    padding: 16vh 4vh;
-   width: 100%;
+   width: 80%;
  }
 .row {
   border: solid rgb(99, 99, 99) 5px;
@@ -221,7 +222,7 @@ display: none;
 #myBtn { /* Hidden by default */
   position: fixed; /* Fixed/sticky position */
   bottom: 20px; /* Place the button at the bottom of the page */
-  right: 30px; /* Place the button 30px from the right */
+  right: 3%; /* Place the button 30px from the right */
   z-index: 99; /* Make sure it does not overlap */
   border: none; /* Remove borders */
   outline: none; /* Remove outline */
@@ -347,12 +348,13 @@ display: none;
 }
 .starter-template p{
   height: 200px;
+  text-align: center;
 }
 
 .col p {
   padding: 4vh;
   color: white;
-  text-align: left;
+  text-align: center;
   }
 
   .col h1 {
@@ -369,6 +371,7 @@ display: none;
 
  .container {
   padding-top: 12vh;
+  width: 100%;
 }
 
 #myBtn {

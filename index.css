@@ -26,7 +26,7 @@ body {
 
 #maincontent {
   position: static;
-  background: url(images/mountain.jpg) 80% 80%;
+  background: url(images/mountain.jpg) 100% 80%;
   padding: 16vh 4vh;
   width: 100%;
   max-height : 500vh;
@@ -269,6 +269,7 @@ display: none;
 
 .starter-template {
   padding-top: 3.3vh;
+
 
 }
 
