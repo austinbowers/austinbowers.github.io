@@ -32,8 +32,8 @@ body {
    width: 80%;
  }
 .row {
-  border: solid black 5px;
-  background: rgb(20, 20, 20);
+  border: solid rgb(99, 99, 99) 5px;
+  background: rgb(29, 29, 29);
   padding: 2vh;
 }
 
