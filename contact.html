@@ -93,18 +93,23 @@
           </div>
         <div class="row">
             <div id="coltwo" class="col">
-                <form id="emailform">
-                  <p><input id="name" type="text" placeholder="First & Last name" 
+                <form id="emailform" method="post" name="myemailform" action="form-to-email.php">
+                  <p><input id="name" name="name" type="text" placeholder="First & Last name" 
                     class="form-control"></p>
-                  <p><input id="subject" type="text" placeholder="Subject" 
+                  <p><input id="subject" name="subject" type="text" placeholder="Subject" 
                     class="form-control"></p>
-                <p><input id="message" type="text" placeholder="Message" 
+                <p><input id="message" name="message" type="text" placeholder="Message" 
                     class="form-control"></p>
-                <p><input type="button" id="mail" value="Send" class="btn btn-primary" style="color:white;"></a></p>
+                    <p><input id="theiremail" name="theiremail" type="text" placeholder="Your email address" 
+                      class="form-control"></p>
+                <p><input type="submit" id="mail" value="Send" class="btn btn-primary" style="color:white;"></a></p>
                 </form>
                 <script type="text/javascript">
-                // email script?
-                
+                // make sure user inputs all boxes script?
+                var frmvalidator  = new Validator("myemailform");
+                frmvalidator.addValidation("name","req","Please provide your name"); 
+                frmvalidator.addValidation("theiremail","req","Please provide your email"); 
+                frmvalidator.addValidation("message","email","Please enter a valid message"); 
               </script>
               </div>
           </div>
