@@ -46,6 +46,7 @@ body {
   }
 
   .row .col h1 {
+    font-weight: 300;
     text-align: center;
     padding-top: 2vh;
     color: white;
@@ -418,6 +419,7 @@ body {
   margin-left:auto;
   margin-right:auto;
   text-align:center;
+  
 
 }
 

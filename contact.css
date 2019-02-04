@@ -25,7 +25,8 @@ body {
 
 #maincontent {
   position: static;
-  background: url(images/mountain.jpg) 80% 80%;
+  background: url(images/DSC_2498.JPG) 30%;
+  background-size: cover;
   padding: 16vh 4vh;
   width: 100%;
   max-height : 500vh;
@@ -40,7 +41,7 @@ input[type=text], textarea {
 }
 
 #colone {
-  color: white;
+  color: black;
 }
 
 #coltwo input{
@@ -85,7 +86,7 @@ input[type=text], textarea {
   text-decoration: none;
   font-size: 3vh;
   font-weight: 100;
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
 
 }
 
@@ -119,7 +120,7 @@ display: none;
 
 #navbar ul li a{
   text-decoration: none;
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   font-size: 2vh;
   font-weight: 100;
   text-align: left;
@@ -313,8 +314,9 @@ display: none;
 
 }
 #maincontent {
-  background: url(images/mountain.jpg) 100% 90%;
+  background: url(images/DSC_2498.JPG) 50% 200%;
   background-color: black;
+  background-size: cover;
 
 }
 
@@ -322,10 +324,11 @@ display: none;
   margin-left:auto;
   margin-right:auto;
   text-align:center;
+  color: black;
 }
 
 #coltwo {
-  color: white;
+  color: black;
   width: 100%;
   padding: 20px;
 }
