@@ -64,8 +64,6 @@ input[type=text], textarea {
 }
 
 .col {
-
-  margin-top: 3px;
   padding: 20px;
 }
 
@@ -73,8 +71,8 @@ input[type=text], textarea {
   text-decoration: none;
   color: rgb(253, 253, 253);
   background: rgb(26, 26, 26);
-  padding-left: 25px;
-  padding-right: 25px;
+  padding-left: 5vh;
+  padding-right: 5vh;
   border-radius: 40px;
 
   transition: 0.3s;
@@ -85,9 +83,9 @@ input[type=text], textarea {
 
   text-decoration: none;
   color: rgb(14, 14, 14);
-  background: rgb(255, 255, 255);
-  padding-left: 25px;
-  padding-right: 25px;
+  background: rgb(199, 199, 199);
+  padding-left: 5vh;
+  padding-right: 5vh;
   border-radius: 40px;
 
   transition: 0.3s;
