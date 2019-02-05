@@ -368,9 +368,25 @@ display: none;
 }
 
 #maincontent {
-  padding-top: 10vh;
+  padding-top: 5vh;
   width: 100%;
 }
+
+#maincontent img{
+
+  width: 100%;
+}
+
+#maincontent h1{
+
+  text-align: center;
+}
+
+#maincontent p{
+
+  text-align: center;
+}
+
 
 #viewmore {
   padding: 2vh;

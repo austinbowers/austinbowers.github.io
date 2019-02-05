@@ -24,10 +24,12 @@ body {
 }
 
 #maincontent {
-  position: static;
+  position: realtive;
   background: url(images/DSC_2498.JPG) 30%;
   background-size: cover;
   padding: 16vh 4vh;
+  top: 0;
+  left: 0;
   width: 100%;
   max-height : 500vh;
 }
