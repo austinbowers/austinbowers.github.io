@@ -31,7 +31,7 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-    <script language="JavaScript" src="scripts/gen_validatorv31.js" type="text/javascript"></script>
+    <script language="JavaScript" src="gen_validatorv31.js" type="text/javascript"></script>
   </head>
 
   <body>
@@ -94,7 +94,7 @@
           </div>
         <div class="row">
             <div id="coltwo" class="col">
-                <form id="emailform" method="post" name="myemailform" action="form-to-email.php">
+                <form id="emailform" method="GET" name="myemailform" action="form-to-email.php">
                   <p><input id="name" name="name" type="text" placeholder="First & Last name" 
                     class="form-control"></p>
                   <p><input id="subject" name="subject" type="text" placeholder="Subject" 
@@ -110,7 +110,6 @@
                 var frmvalidator  = new Validator("myemailform");
                 frmvalidator.addValidation("name","req","Please provide your name"); 
                 frmvalidator.addValidation("theiremail","req","Please provide your email"); 
-                frmvalidator.addValidation("message","email","Please enter a valid message"); 
               </script>
               </div>
           </div>

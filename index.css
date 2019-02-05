@@ -145,7 +145,7 @@ display: none;
   display: inline-block;
   text-decoration: none;
   color: rgb(221, 221, 221);
-  font-weight:800;
+  font-weight:400;
   font-size: 2vh;
   background: rgb(26, 26, 26);
   padding: 0.5em 2em;
@@ -159,7 +159,6 @@ display: none;
   text-decoration: none;
   background: rgba(255, 255, 255, 0.562);
   color: rgb(34, 34, 34);
-
 }
 
 #footer {
