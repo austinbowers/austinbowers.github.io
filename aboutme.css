@@ -373,7 +373,7 @@ display: none;
 }
 
 #maincontent img{
-
+  align-content: center;
   width: 100%;
 }
 
@@ -383,7 +383,7 @@ display: none;
 }
 
 #maincontent p{
-
+  padding: 20px;
   text-align: center;
 }
 

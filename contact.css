@@ -24,12 +24,18 @@ body {
 }
 
 #maincontent {
-  position: static;
-  background: url(images/DSC_2498.JPG) 30%;
+  position: realtive;
+  background: url(images/DSC_2498.JPG);
   background-size: cover;
   padding: 16vh 4vh;
+  top: 0;
+  left: 0;
   width: 100%;
-  max-height : 500vh;
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 input[type=text], textarea {
   width: 100%;
