@@ -25,7 +25,7 @@ body {
 }
 
 #maincontent {
-  background: url(images/DSC_2498.JPG);
+  background: url(images/Vermont2.jpg);
   background-size: cover;
   padding: 16vh 4vh;
   top: 0;
@@ -302,7 +302,7 @@ display: none;
 }
 
 #maincontent {
-  background: url(images/DSC_2498.JPG) 80%;
+  background: url(images/Vermont2.jpg) 80%;
   background-size: cover;
   max-height : 100vh;
 }
