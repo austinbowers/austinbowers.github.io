@@ -347,6 +347,7 @@ display: none;
 
 .starter-template h1 {
   float: left;
+  
 
 }
 
@@ -370,6 +371,7 @@ display: none;
 #maincontent {
   padding-top: 5vh;
   width: 100%;
+
 }
 
 #maincontent img{
@@ -395,6 +397,15 @@ display: none;
 
 .starter-template p{
   height: 200px;
+}
+body {
+  padding-top: 0px;
+  margin: 0;
+  border: 0;
+  outline: 0;
+  font-family: 'Quicksand' , sans-serif;
+  background: url(images/Vermont2-long.jpg);
+  background-size: cover;
 }
 
 }
