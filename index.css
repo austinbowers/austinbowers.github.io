@@ -26,7 +26,6 @@ body {
 
 #maincontent {
   background: url(images/Vermont2.jpg);
-  background-size: cover;
   padding: 16vh 4vh;
   top: 0;
   left: 0;
@@ -158,8 +157,7 @@ display: none;
   border-radius: 40px;
   margin: 1em 0;
   transition: 0.3s;
-  border: solid 1px;
-  border-color: cornflowerblue;
+
 
 }
 
@@ -167,6 +165,7 @@ display: none;
   text-decoration: none;
   background: rgba(255, 255, 255, 0.562);
   color: rgb(34, 34, 34);
+
 }
 
 #footer {
@@ -306,6 +305,7 @@ display: none;
 #maincontent {
   background: url(images/Vermont2.jpg) 80%;
   background-size: cover;
+  background-attachment: fixed;
   max-height : 100vh;
 }
 
