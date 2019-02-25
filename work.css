@@ -31,7 +31,9 @@ body {
  }
 
 
-
+#demo img {
+  width: 30%;
+}
 
 
 .row {
@@ -102,16 +104,7 @@ body {
   width: 0%;
 }
 
-#viewmoreTwo {
-  display: none;
 
-}
-
-#viewlessTwo {
-  display: none;
-
-
-}
 
 #viewmore {
   display: block;
@@ -450,9 +443,7 @@ body {
   font-size: 10px;
   background: rgba(0, 0, 0, 0.473)
 }
-#imagesTwo {
-  width: 0%;
-}
+
 
 #viewmoreTwo {
   display: block;
