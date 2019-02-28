@@ -9,13 +9,17 @@ body {
   border: 0;
   outline: 0;
   font-family: 'Quicksand' , sans-serif;
-  background: url(images/Vermont2-long.jpg);
+  background: white;
   background-size: cover;
 }
 
 #navmain {
   top: 0;
   transition: top 0.5s;
+}
+
+.row #animatedIllustration {
+  background: black;
 }
 
 
@@ -278,6 +282,8 @@ body {
 #footer ul li a:hover {
   font-weight: 100;
 }
+
+
 
 
 #myBtn { /* Hidden by default */
