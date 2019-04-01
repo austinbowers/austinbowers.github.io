@@ -22,7 +22,9 @@ body {
   background: black;
 }
 
-
+#images {
+  width: 0%;
+}
 .sidenav {
     display: none;
 }
@@ -31,7 +33,7 @@ body {
    position: static;
 
    padding: 12vh 4vh;
-   width: 80%;
+   width: 100%;
  }
 
 
@@ -103,9 +105,7 @@ body {
   display: none;
  }
 
-#images {
-  width: 0%;
-}
+
 
 
 
@@ -394,34 +394,9 @@ body {
   height: 110vh;
 }
 
-.starter-template h1 {
-  float: left;
-
-}
-
-.starter-template img {
-  float: none;
-  width: 100%;
-  font-size: 6vh;
-  padding-bottom: 0;
-
-}
-
-.starter-template {
-  
-  font-weight: 100;
-  padding: 10.5vh 1.5vh;
-  text-align: center;
-  color: white;
-
-}
-.starter-template p{
-  height: 200px;
-  text-align: center;
-}
 
 .col p {
-  padding: 2vh;
+
   color: black;
   text-align: center;
   }
@@ -433,18 +408,21 @@ body {
     }
 
  .col img{
-   float: center;
   width: 100%;
-  padding: 4vh;
+  padding-left: 0;
+  padding-right: 0;
+  padding: 0;
+  padding-bottom: 2vh;
+
  }
 
  .container {
-  padding-top: 12vh;
-  width: 100%;
+  padding: 11vh 0vh;
+  overflow: hidden;
 }
 
 #myBtn {
-  padding: 0.5em 2em;
+  padding: 0.4em 2em;
   font-size: 10px;
   background: rgba(0, 0, 0, 0.473)
 }
