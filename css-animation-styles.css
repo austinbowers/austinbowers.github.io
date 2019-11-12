@@ -1,0 +1,78 @@
+#panel1 {
+    height: 300px;
+    width: 200px;
+    background-color: darkblue;
+
+}
+
+#panel2 {
+    height: 300px;
+    width: 200px;
+    background-color: darkblue;
+    animation-iteration-count: infinite;
+    animation-name: opacitychanger1;
+    animation-duration: 5s;
+}
+
+#panel3 {
+    height: 300px;
+    width: 200px;
+    background-color: darkblue;
+    animation-iteration-count: infinite;
+    animation-name: opacitychanger2;
+
+    animation-duration: 5s;
+}
+
+#panel4 {
+    height: 300px;
+    width: 200px;
+    background-color: darkblue;
+    animation-iteration-count: infinite;
+    animation-name: opacitychanger3;
+
+    animation-duration: 5s;
+}
+
+
+#pointer {
+    position: absolute;
+    z-index: 100;
+    width: 100px;
+    top: 30%;
+    animation-name: move;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+}
+
+
+
+@keyframes move {
+    from { left: 20%; }
+    to   { left: 60%; }
+  }
+
+  @keyframes opacitychanger1 {
+    0%, 20%{
+      opacity: .2;
+    }
+    25%, 28%, 100% {
+        opacity: 1;
+    }
+  }
+  @keyframes opacitychanger2 {
+    0%, 30%{
+      opacity: .2;
+    }
+    40%, 45%, 100% {
+        opacity: 1;
+    }
+  }
+  @keyframes opacitychanger3 {
+    0%, 50%{
+      opacity: .2;
+    }
+    53%, 56%, 100% {
+        opacity: 1;
+    }
+  }
