@@ -80,10 +80,10 @@
     }
   }
   @keyframes opacitychanger3 {
-    0%, 55%{
+    0%, 60%{
       opacity: .2;
     }
-    57%, 60%, 100% {
+    62%, 65%, 100% {
         opacity: 1;
     }
   }
