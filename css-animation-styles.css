@@ -6,14 +6,16 @@
 #panel1 {
     height: 300px;
     width: 200px;
-    background-color: blue;
+    background-image: url(panel-texture.jpg);
+    background-size: cover;
 
 }
 
 #panel2 {
     height: 300px;
     width: 200px;
-    background-color: blue;
+    background-image: url(panel-texture.jpg);
+    background-size: cover;
     animation-iteration-count: infinite;
     animation-name: opacitychanger1;
     animation-duration: 5s;
@@ -22,7 +24,8 @@
 #panel3 {
     height: 300px;
     width: 200px;
-    background-color: blue;
+    background-image: url(panel-texture.jpg);
+    background-size: cover;
     animation-iteration-count: infinite;
     animation-name: opacitychanger2;
     animation-duration: 5s;
@@ -31,10 +34,10 @@
 #panel4 {
     height: 300px;
     width: 200px;
-    background-color: blue;
+    background-image: url(panel-texture.jpg);
+    background-size: cover;
     animation-iteration-count: infinite;
     animation-name: opacitychanger3;
-
     animation-duration: 5s;
 }
 
@@ -65,30 +68,30 @@
 
 @keyframes move {
     from { left: 31%; }
-    to   { left: 60%; }
+    to   { left: 61%; }
   }
 
   @keyframes opacitychanger1 {
     0%, 20%{
-      opacity: .2;
+      opacity: .3;
     }
     25%, 28%, 100% {
         opacity: 1;
     }
   }
   @keyframes opacitychanger2 {
-    0%, 32%{
-      opacity: .2;
+    0%, 36%{
+      opacity: .3;
     }
     40%, 45%, 100% {
         opacity: 1;
     }
   }
   @keyframes opacitychanger3 {
-    0%, 65%{
-      opacity: .2;
+    0%, 70%{
+      opacity: .3;
     }
-    66%, 72%, 100% {
+    72%, 77%, 100% {
         opacity: 1;
     }
   }
