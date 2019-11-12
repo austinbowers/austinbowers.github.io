@@ -3,10 +3,16 @@
   background-size: cover;
 }
 
+
+
+
+/*------------ Panels and Opacity Keyframes ---------------*/
+
 .panel {
   height: 300px;
   width: 200px;
 }
+
 
 #one {
     background-image: url(panel-texture.jpg);
@@ -18,7 +24,7 @@
     background-image: url(panel-texture.jpg);
     background-size: cover;
     animation-iteration-count: infinite;
-    animation-name: opacitychanger1;
+    animation-name: opacitychanger2;
     animation-duration: 5s;
 }
 
@@ -26,7 +32,7 @@
     background-image: url(panel-texture.jpg);
     background-size: cover;
     animation-iteration-count: infinite;
-    animation-name: opacitychanger2;
+    animation-name: opacitychanger3;
     animation-duration: 5s;
 }
 
@@ -34,9 +40,39 @@
     background-image: url(panel-texture.jpg);
     background-size: cover;
     animation-iteration-count: infinite;
-    animation-name: opacitychanger3;
+    animation-name: opacitychanger4;
     animation-duration: 5s;
 }
+
+@keyframes opacitychanger2 { /* For Panel #2 */
+  0%, 18%{
+    opacity: .2;
+  }
+  25%, 28%, 100% {
+      opacity: 1;
+  }
+}
+@keyframes opacitychanger3 { /* For Panel #3 */
+  0%, 34%{
+    opacity: .2;
+  }
+  40%, 45%, 100% {
+      opacity: 1;
+  }
+}
+@keyframes opacitychanger4 { /* For Panel #4 */
+  0%, 70%{
+    opacity: .2;
+  }
+  72%, 77%, 100% {
+      opacity: 1;
+  }
+}
+
+
+
+
+/*------------ Orange Panel Outline ---------------*/
 
 #panel-outline {
   position: absolute;
@@ -45,11 +81,16 @@
   border:orange 7px dashed;
   height: 300px;
   width: 730px;
-  animation-name: expandborder;
+  animation-name: expandPanelOutline;
   animation-iteration-count: infinite;
   animation-duration: 5s;
 }
+@keyframes expandPanelOutline {
+  from { width: 10%;}
+  to { width: 40%;}
+}
 
+/*--------------------Pointer Animation -----------------------*/
 
 #pointer {
   transform: rotate(-20deg);
@@ -57,45 +98,183 @@
     z-index: 100;
     width: 80px;
     top: 350px;
-    animation-name: move;
+    animation-name: slidePointer;
     animation-iteration-count: infinite;
     animation-duration: 5s;
 }
-
-
-
-@keyframes move {
-    from { left: 32%; }
-    to   { left: 62%; }
+  @keyframes slidePointer {
+      from { left: 32%; }
+      to   { left: 62%; }
   }
 
-  @keyframes expandborder {
-    from { width: 10%;}
-    to { width: 40%;}
+
+
+
+  /*-------------------------------------------------------------------------*/
+  /*----------------------------- Media Queries -----------------------------*/
+  /*-------------------------------------------------------------------------*/
+
+
+      @media screen and (max-width: 600px) {
+        .panel {
+          height: 100px;
+        }
+
+        /*----------------- Orange Panel Outline ------------------*/
+        #panel-outline {
+          position: absolute;
+          z-index: 99;
+          background-color:rgba(255, 102, 0, 0.1);
+          border:orange 4px dashed;
+          height: 100px;
+          width: 730px;
+          animation-name: expandPanelOutline;
+          animation-iteration-count: infinite;
+          animation-duration: 5s;
+        }
+        @keyframes expandPanelOutline {
+          from { width: 15%;}
+          to { width: 67%;}
+        }
+
+      /*--------------------Pointer Animation -----------------------*/
+      #pointer {
+        transform: rotate(-20deg);
+          position: absolute;
+          z-index: 100;
+          width: 40px;
+          top: 150px;
+          animation-name: slidePointer;
+          animation-iteration-count: infinite;
+          animation-duration: 5s;
+        }
+        @keyframes slidePointer {
+            from { left: 22%; }
+            to   { left: 74%; }
+        }
+
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 992px) {
+      .panel {
+        height: 200px;
+      }
+
+      /*----------------- Orange Panel Outline ------------------*/
+      #panel-outline {
+        position: absolute;
+        z-index: 99;
+        background-color:rgba(255, 102, 0, 0.1);
+        border:orange 4px dashed;
+        height: 200px;
+        width: 730px;
+        animation-name: expandPanelOutline;
+        animation-iteration-count: infinite;
+        animation-duration: 5s;
+      }
+      @keyframes expandPanelOutline {
+        from { width: 15%;}
+        to { width: 64%;}
+      }
+
+    /*--------------------Pointer Animation -----------------------*/
+    #pointer {
+      transform: rotate(-20deg);
+        position: absolute;
+        z-index: 100;
+        width: 40px;
+        top: 150px;
+        animation-name: slidePointer;
+        animation-iteration-count: infinite;
+        animation-duration: 5s;
+      }
+      @keyframes slidePointer {
+          from { left: 22%; }
+          to   { left: 72%; }
+      }
+
   }
 
-  @keyframes opacitychanger1 {
-    0%, 18%{
-      opacity: .2;
+  @media screen and (min-width: 1200px) and (max-width: 1300px) {
+    .panel {
+      height: 310px;
     }
-    25%, 28%, 100% {
-        opacity: 1;
+
+    /*----------------- Orange Panel Outline ------------------*/
+    #panel-outline {
+      position: absolute;
+      z-index: 99;
+      background-color:rgba(255, 102, 0, 0.1);
+      border:orange 4px dashed;
+      height: 310px;
+      width: 730px;
+      animation-name: expandPanelOutline;
+      animation-iteration-count: infinite;
+      animation-duration: 5s;
     }
-  }
-  @keyframes opacitychanger2 {
-    0%, 34%{
-      opacity: .2;
+    @keyframes expandPanelOutline {
+      from { width: 15%;}
+      to { width: 60%;}
     }
-    40%, 45%, 100% {
-        opacity: 1;
+
+  /*--------------------Pointer Animation -----------------------*/
+  #pointer {
+    transform: rotate(-20deg);
+      position: absolute;
+      z-index: 100;
+      width: 40px;
+      top: 150px;
+      animation-name: slidePointer;
+      animation-iteration-count: infinite;
+      animation-duration: 5s;
     }
-  }
-  @keyframes opacitychanger3 {
-    0%, 70%{
-      opacity: .2;
+    @keyframes slidePointer {
+        from { left: 22%; }
+        to   { left: 68%; }
     }
-    72%, 77%, 100% {
-        opacity: 1;
-    }
+
+}
+
+@media screen and (min-width: 1400px) and (max-width: 1450px) {
+  .panel {
+    height: 310px;
   }
 
+  /*----------------- Orange Panel Outline ------------------*/
+  #panel-outline {
+    position: absolute;
+    z-index: 99;
+    background-color:rgba(255, 102, 0, 0.1);
+    border:orange 4px dashed;
+    height: 310px;
+    width: 730px;
+    animation-name: expandPanelOutline;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+  }
+  @keyframes expandPanelOutline {
+    from { width: 15%;}
+    to { width: 56%;}
+  }
+
+/*--------------------Pointer Animation -----------------------*/
+#pointer {
+  transform: rotate(-20deg);
+    position: absolute;
+    z-index: 100;
+    width: 40px;
+    top: 150px;
+    animation-name: slidePointer;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+  }
+  @keyframes slidePointer {
+      from { left: 28%; }
+      to   { left: 69%; }
+  }
+
+}
+
+  
+
+    
