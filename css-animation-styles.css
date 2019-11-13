@@ -129,12 +129,12 @@
 
       /*--------------------Pointer Animation -----------------------*/
       #pointer { 
-          width: 40px;
+          width: 90px;
           top: 150px;
         }
         @keyframes slidePointer {
-            from { left: 22%; }
-            to   { left: 74%; }
+            from { left: 20%; }
+            to   { left: 72%; }
         }
 
     }
@@ -151,18 +151,18 @@
         border:#DAFFEF 4px dashed;
       }
       @keyframes expandPanelOutline {
-        from { width: 16%;}
-        to { width: 66%;}
+        from { width: 14%;}
+        to { width: 64%;}
       }
 
     /*--------------------Pointer Animation -----------------------*/
     #pointer {
-        width: 100px;
+        width: 140px;
         top: 270px;
       }
       @keyframes slidePointer {
-          from { left: 22%; }
-          to   { left: 72%; }
+          from { left: 19%; }
+          to   { left: 69%; }
       }
 
   }
