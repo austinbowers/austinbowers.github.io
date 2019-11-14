@@ -12,15 +12,20 @@
     <title>CSS Animation</title>
   </head>
   <body>
-    <div class="my-2 mx-2" id="all-content">
-      <div class="container pt-5">
-        <div class="row jumbotron" id="background">
-            <img id="pointer" src="pointer.png">
-            <div id="panel-outline"></div>
-            <div id="one" class="panel col-2 py-5 mr-2"></div>
-            <div id="two" class="panel col-2 py-5 mr-2"></div>
-            <div id="three" class="panel col-2 py-5 mr-2"></div>
-            <div id="four" class="panel col-2 py-5 mr-2"></div>
+        <div class="container mx-auto" id="background">
+            <div class="row pb-3 justify-content-center">
+              <img id="pointer" src="pointer.png">
+              <div id="top-one" class="panel"></div>
+              <div id="top-two" class="panel"></div>
+              <div id="top-three" class="panel"></div>
+              <div id="top-four" class="panel"></div>
+            </div>
+            <div class="row justify-content-center">
+                <div id="bottom-one" class="panel"></div>
+                <div id="bottom-two" class="panel"></div>
+                <div id="bottom-three" class="panel"></div>
+                <div id="bottom-four" class="panel"></div>
+            </div>
         </div>
         <h3 class="text-center pt-5">Drag to add more panels on your roof.</h1>
       </div>
@@ -29,7 +34,7 @@
               Continue
             </button>
       </div>
-    </div>
+
     
 
     <!-- Optional JavaScript -->
