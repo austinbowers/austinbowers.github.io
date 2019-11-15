@@ -98,7 +98,7 @@
 
 /*------------ Panels and Opacity Keyframes ---------------*/
 
-.panel {
+.panel {  
   height: 60px;
   width: 40px;
   background-color: rgba(45, 119, 204, 0.651);
@@ -245,6 +245,327 @@
 /*----------------------------- Media Queries -----------------------------*/
 /*-------------------------------------------------------------------------*/
 
-      @media screen and (max-width: 600px) {
+@media screen and (min-width: 300px) and (max-width: 768px) {
+        .panel {
+          height: 20px;
+          width: 12px;
+          border: 1px solid #E7EDF2;
+        }
+
+        #pointer {
+          width: 150px;
+
+      }
+        @keyframes slidePointer {
+          0% , 25%{
+            left: 32%;
+          }
+          25%, 50% {
+            left: 56%;
+          }
+          50% , 75%{
+            left: 46%;
+          }
+          75%, 100% {
+            left: 52%;
+          }
+          0% , 25%{
+            top: 20px;
+          }
+          25%, 50% {
+            top: 20px;
+          }
+          50% , 75%{
+            top: 85px;
+          }
+          75%, 100% {
+            top: 85px;
+          }
+        }
+
+      /*-------------------- Dot Animation -----------------------*/
+
+      .dot {
+        height: 25px;
+        width: 25px;
+
+      }
+
+      @keyframes dot {
+        0% , 25%{
+          left: 43%;
+          opacity: 1;
+        }
+        25%, 50% {
+          left: 52%;
+          opacity: 0;
+        }
+        50%, 51% {
+          left: 46%;
+          opacity: 1;
+        }
+        75%, 100% {
+          left: 52%;
+          opacity: 0;
+        }
+        0% , 25%{
+          top: 20px;
+        }
+        25%, 50% {
+          top: 20px;
+        }
+        50% , 75%{
+          top: 85px;
+        }
+        75%, 100% {
+          top: 85px;
+        }
+      }
 
   }
+      @media screen and (min-width: 1300px) and (max-width: 1450px) {
+        .panel {
+          height: 50px;
+          width: 30px;
+          border: 1px solid #E7EDF2;
+        }
+
+        /*--------------------Pointer Animation -----------------------*/
+
+        #pointer {
+            width: 150px;
+
+        }
+          @keyframes slidePointer {
+            0% , 25%{
+              left: 42%;
+            }
+            25%, 50% {
+              left: 56%;
+            }
+            50% , 75%{
+              left: 46%;
+            }
+            75%, 100% {
+              left: 52%;
+            }
+            0% , 25%{
+              top: 20px;
+            }
+            25%, 50% {
+              top: 20px;
+            }
+            50% , 75%{
+              top: 85px;
+            }
+            75%, 100% {
+              top: 85px;
+            }
+          }
+
+        /*-------------------- Dot Animation -----------------------*/
+
+        .dot {
+          height: 25px;
+          width: 25px;
+
+        }
+
+        @keyframes dot {
+          0% , 25%{
+            left: 42%;
+            opacity: 1;
+          }
+          25%, 50% {
+            left: 56%;
+            opacity: 0;
+          }
+          50%, 51% {
+            left: 46%;
+            opacity: 1;
+          }
+          75%, 100% {
+            left: 52%;
+            opacity: 0;
+          }
+          0% , 25%{
+            top: 20px;
+          }
+          25%, 50% {
+            top: 20px;
+          }
+          50% , 75%{
+            top: 85px;
+          }
+          75%, 100% {
+            top: 85px;
+          }
+        }
+
+
+    }
+
+    @media screen and (min-width: 989px) and (max-width: 1200px) {
+      .panel {
+        height: 50px;
+        width: 30px;
+        border: 1px solid #E7EDF2;
+      }
+
+      /*--------------------Pointer Animation -----------------------*/
+
+      #pointer {
+          width: 150px;
+
+      }
+        @keyframes slidePointer {
+          0% , 25%{
+            left: 40%;
+          }
+          25%, 50% {
+            left: 57%;
+          }
+          50% , 75%{
+            left: 46%;
+          }
+          75%, 100% {
+            left: 52%;
+          }
+          0% , 25%{
+            top: 20px;
+          }
+          25%, 50% {
+            top: 20px;
+          }
+          50% , 75%{
+            top: 85px;
+          }
+          75%, 100% {
+            top: 85px;
+          }
+        }
+
+      /*-------------------- Dot Animation -----------------------*/
+
+      .dot {
+        height: 25px;
+        width: 25px;
+
+      }
+
+      @keyframes dot {
+        0% , 25%{
+          left: 40%;
+          opacity: 1;
+        }
+        25%, 50% {
+          left: 57%;
+          opacity: 0;
+        }
+        50%, 51% {
+          left: 46%;
+          opacity: 1;
+        }
+        75%, 100% {
+          left: 52%;
+          opacity: 0;
+        }
+        0% , 25%{
+          top: 20px;
+        }
+        25%, 50% {
+          top: 20px;
+        }
+        50% , 75%{
+          top: 85px;
+        }
+        75%, 100% {
+          top: 85px;
+        }
+      }
+
+
+  }
+
+
+  @media screen and (min-width: 768px) and (max-width: 988px) {
+    .panel {
+      height: 30px;
+      width: 18px;
+      border: 1px solid #E7EDF2;
+    }
+
+    /*--------------------Pointer Animation -----------------------*/
+
+    #pointer {
+        width: 150px;
+
+    }
+      @keyframes slidePointer {
+        0% , 25%{
+          left: 41%;
+        }
+        25%, 50% {
+          left: 54%;
+        }
+        50% , 75%{
+          left: 46%;
+        }
+        75%, 100% {
+          left: 52%;
+        }
+        0% , 25%{
+          top: 10px;
+        }
+        25%, 50% {
+          top: 10px;
+        }
+        50% , 75%{
+          top: 50px;
+        }
+        75%, 100% {
+          top: 50px;
+        }
+      }
+
+    /*-------------------- Dot Animation -----------------------*/
+
+    .dot {
+      height: 25px;
+      width: 25px;
+
+    }
+
+    @keyframes dot {
+      0% , 25%{
+        left: 41%;
+        opacity: 1;
+      }
+      25%, 50% {
+        left: 54%;
+        opacity: 0;
+      }
+      50%, 51% {
+        left: 46%;
+        opacity: 1;
+      }
+      75%, 100% {
+        left: 52%;
+        opacity: 0;
+      }
+      0% , 25%{
+        top: 10px;
+      }
+      25%, 50% {
+        top: 10px;
+      }
+      50% , 75%{
+        top: 50px;
+      }
+      75%, 100% {
+        top: 50px;
+      }
+    }
+
+
+}
