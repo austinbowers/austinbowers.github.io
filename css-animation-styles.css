@@ -569,3 +569,85 @@
 
 
 }
+
+@media screen and (min-width: 1441px) {
+  .panel {
+    height: 50px;
+    width: 35px;
+    border: 1px solid #E7EDF2;
+  }
+
+  /*--------------------Pointer Animation -----------------------*/
+
+  #pointer {
+      width: 150px;
+
+  }
+    @keyframes slidePointer {
+      0% , 25%{
+        left: 43%;
+      }
+      25%, 50% {
+        left: 55%;
+      }
+      50% , 75%{
+        left: 46%;
+      }
+      75%, 100% {
+        left: 52%;
+      }
+      0% , 25%{
+        top: 10px;
+      }
+      25%, 50% {
+        top: 10px;
+      }
+      50% , 75%{
+        top: 60px;
+      }
+      75%, 100% {
+        top: 60px;
+      }
+    }
+
+  /*-------------------- Dot Animation -----------------------*/
+
+  .dot {
+    height: 25px;
+    width: 25px;
+
+  }
+
+  @keyframes dot {
+    0% , 25%{
+      left: 43%;
+      opacity: 1;
+    }
+    25%, 50% {
+      left: 55%;
+      opacity: 0;
+    }
+    50%, 51% {
+      left: 46%;
+      opacity: 1;
+    }
+    75%, 100% {
+      left: 52%;
+      opacity: 0;
+    }
+    0% , 25%{
+      top: 10px;
+    }
+    25%, 50% {
+      top: 10px;
+    }
+    50% , 75%{
+      top: 60px;
+    }
+    75%, 100% {
+      top: 60px;
+    }
+  }
+
+
+}
