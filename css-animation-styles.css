@@ -315,8 +315,8 @@
         /*--------------------Pointer Animation -----------------------*/
         #pointer {
           background-image: url(pointer.png);
-          height: 90px;
-          width: 60px;
+          height: 180px;
+          width: 120px;
          }
           @keyframes slidePointer {
             0% , 10%{
