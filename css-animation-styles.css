@@ -9,92 +9,106 @@
 /*-------------------- Dot Animation -----------------------*/
 
 .dot {
-  height: 25px;
-  width: 25px;
-  background-color: rgba(82, 192, 255, 0.404);
-  border: 1px solid #E7EDF2;
-  box-shadow: rgb(255, 255, 255) 0px 0px 10px 10px ;
+  height: 40px;
+  width: 40px;
+  background-image: url(touch-gesture.png);
+  background-size: cover;
   border-radius: 50%;
   position: absolute;
-  z-index: 100;
-  top: 100px;
+  z-index: 99;
+  top: 10px;
   animation-name: dot;
   animation-iteration-count: infinite;
   animation-duration: 5s;
+  left: 43%;
+}
+.dot2 {
+  height: 40px;
+  width: 40px;
+  background-image: url(touch-gesture.png);
+  background-size: cover;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 99;
+  top: 75px;
+  animation-name: dot2;
+  animation-iteration-count: infinite;
+  animation-duration: 5s;
+  left: 46.2%;
+  opacity: 0;
 }
 
 @keyframes dot {
-  0% , 25%{
-    left: 13%;
+  0%, 5%, 25%{
     opacity: 1;
   }
   25%, 50% {
-    left: 80%;
     opacity: 0;
   }
+  50%, 100% {
+    opacity: 0;
+  }
+
+}
+@keyframes dot2 {
+
   50%, 51% {
-    left: 46%;
-    opacity: 1;
-  }
-  75%, 100% {
-    left: 52%;
     opacity: 0;
   }
-  0% , 25%{
-    top: 20px;
+  51%, 80%  {
+
+    opacity: 1;
   }
-  25%, 50% {
-    top: 20px;
-  }
-  50% , 75%{
-    top: 85px;
+  80%, 85% {
+
+    opacity: 0;
   }
   75%, 100% {
-    top: 85px;
+
+    opacity: 0;
   }
+
 }
 
 
 /*--------------------Pointer Animation -----------------------*/
 
 #pointer {
+  height: 40px;
+  width: 40px;
+  background-image: url(mouse-pointer.png);
+  background-size: cover;
   transform: rotate(-20deg);
     position: absolute;
     z-index: 100;
-    width: 150px;
-    top: 100px;
     animation-name: slidePointer;
     animation-iteration-count: infinite;
     animation-duration: 5s;
-
 }
-  @keyframes slidePointer {
-    0% , 25%{
-      left: 13%;
-    }
-    25%, 50% {
-      left: 80%;
-    }
-    50% , 75%{
-      left: 46%;
-    }
-    75%, 100% {
-      left: 52%;
-    }
-    0% , 25%{
-      top: 20px;
-    }
-    25%, 50% {
-      top: 20px;
-    }
-    50% , 75%{
-      top: 85px;
-    }
-    75%, 100% {
-      top: 85px;
-    }
-  }
 
+  @keyframes slidePointer {
+    0% , 10%{
+      left: 44%;
+      top: 25px;
+    }
+    10%, 26% {
+      left: 44%;
+      top: 25px;
+    }
+    26%, 50% {
+      left: 56%;
+      top: 25px;
+    }
+    50% , 75%{
+      left: 47%;
+      top: 85px;
+    }
+    75%, 100% {
+      left: 53%;
+      top: 85px;
+    }
+
+  }
 
 /*------------ Panels and Opacity Keyframes ---------------*/
 
@@ -155,20 +169,23 @@
   0% , 3%{
     opacity: 0;
   }
-  3%, 100% {
+  3% , 10%{
+    opacity: 0;
+  }
+  10%, 100% {
       opacity: 1;
   }
 }
 @keyframes opacitychanger2 { /* For Panel #2 */
-  0%, 3%, 8%{
+  0%, 10%, 12%{
     opacity: 0;
   }
- 8%, 100% {
+ 12%, 100% {
       opacity: 1;
   }
 }
 @keyframes opacitychanger3 { /* For Panel #3 */
-  0%, 8%, 13%{
+  0%, 12%, 13%{
     opacity: 0;
   }
   13%, 100% {
@@ -176,66 +193,69 @@
   }
 }
 @keyframes opacitychanger4 { /* For Panel #4 */
-  0%, 13%, 18%{
+  0%, 13%, 14%{
     opacity: 0;
   }
-  18%, 100% {
+  14%, 100% {
       opacity: 1;
   }
 }
 @keyframes opacitychanger5 { /* For Panel #5 */
-  0%, 13%, 18%{
+  0%, 14%, 17%{
     opacity: 0;
   }
-  18%, 100% {
+  17%, 100% {
       opacity: 1;
   }
 }
 @keyframes opacitychanger6 { /* For Panel #6 */
-  0%, 13%, 18%{
+  0%, 17%, 20%{
     opacity: 0;
   }
-  18%, 100% {
+  20%, 100% {
       opacity: 1;
   }
 }
 @keyframes opacitychanger7 { /* For Panel #7 */
-  0%, 13%, 18%{
+  0%, 20%, 23%{
     opacity: 0;
   }
-  18%, 100% {
+  23%, 100% {
       opacity: 1;
   }
 }
 @keyframes opacitychanger8 { /* For Panel #8 */
-  0%, 45% , 52%{
+    0% , 50%{
     opacity: 0;
   }
-  52%, 100% {
+  50% , 55%{
+    opacity: 0;
+  }
+  55%, 100% {
       opacity: 1;
   }
 }
 @keyframes opacitychanger9 { /* For Panel #9 */
-  0%, 52%, 58%{
+  0%, 52%, 55%{
+    opacity: 0;
+  }
+  55%, 100% {
+      opacity: 1;
+  }
+}
+@keyframes opacitychanger10 { /* For Panel #10 */
+  0%, 55%, 58%{
     opacity: 0;
   }
   58%, 100% {
       opacity: 1;
   }
 }
-@keyframes opacitychanger10 { /* For Panel #10 */
-  0%, 58%, 63%{
-    opacity: 0;
-  }
-  63%, 100% {
-      opacity: 1;
-  }
-}
 @keyframes opacitychanger11 { /* For Panel #11 */
-  0%, 63%, 67%{
+  0%, 58%, 62%{
     opacity: 0;
   }
-  67%, 100% {
+  62%, 100% {
       opacity: 1;
   }
 }
@@ -245,409 +265,124 @@
 /*----------------------------- Media Queries -----------------------------*/
 /*-------------------------------------------------------------------------*/
 
-@media screen and (min-width: 300px) and (max-width: 768px) {
-        .panel {
-          height: 15px;
-          width: 8px;
-          border: 1px solid #E7EDF2;
-        }
+  @media screen and (max-width: 1440px ) {
+    /* Tablet to Laptop */
 
-        #pointer {
-          width: 100px;
-
-      }
-        @keyframes slidePointer {
-          0% , 25%{
-            left: 34%;
-          }
-          25%, 50% {
-            left: 55%;
-          }
-          50% , 75%{
-            left: 43%;
-          }
-          75%, 100% {
-            left: 52%;
-          }
-          0% , 25%{
-            top: 1px;
-          }
-          25%, 50% {
-            top: 1px;
-          }
-          50% , 75%{
-            top: 15px;
-          }
-          75%, 100% {
-            top: 15px;
-          }
-        }
-
-      /*-------------------- Dot Animation -----------------------*/
-
+    /*-------------------- Dot Animation --------------------*/
       .dot {
-        height: 8px;
-        width: 8px;
-
-      }
-
-      @keyframes dot {
-        0% , 25%{
-          left: 36%;
-          opacity: 1;
-        }
-        25%, 50% {
-          left: 57%;
-          opacity: 0;
-        }
-        50%, 51% {
-          left: 45%;
-          opacity: 1;
-        }
-        75%, 100% {
-          left: 54%;
-          opacity: 0;
-        }
-        0% , 25%{
-          top: 4px;
-        }
-        25%, 50% {
-          top: 4px;
-        }
-        50% , 75%{
-          top: 22px;
-        }
-        75%, 100% {
-          top: 22px;
-        }
-      }
-
-  }
-      @media screen and (min-width: 1200px) and (max-width: 1450px) {
-        .panel {
-          height: 50px;
-          width: 30px;
-          border: 1px solid #E7EDF2;
-        }
-
-        /*--------------------Pointer Animation -----------------------*/
-
-        #pointer {
-            width: 150px;
-
-        }
-          @keyframes slidePointer {
-            0% , 25%{
-              left: 42%;
-            }
-            25%, 50% {
-              left: 56%;
-            }
-            50% , 75%{
-              left: 46%;
-            }
-            75%, 100% {
-              left: 52%;
-            }
-            0% , 25%{
-              top: 20px;
-            }
-            25%, 50% {
-              top: 20px;
-            }
-            50% , 75%{
-              top: 85px;
-            }
-            75%, 100% {
-              top: 85px;
-            }
-          }
-
-        /*-------------------- Dot Animation -----------------------*/
-
-        .dot {
-          height: 25px;
-          width: 25px;
-
-        }
-
-        @keyframes dot {
-          0% , 25%{
-            left: 42%;
-            opacity: 1;
-          }
-          25%, 50% {
-            left: 56%;
-            opacity: 0;
-          }
-          50%, 51% {
-            left: 46%;
-            opacity: 1;
-          }
-          75%, 100% {
-            left: 52%;
-            opacity: 0;
-          }
-          0% , 25%{
-            top: 20px;
-          }
-          25%, 50% {
-            top: 20px;
-          }
-          50% , 75%{
-            top: 85px;
-          }
-          75%, 100% {
-            top: 85px;
-          }
-        }
-
-
+      left: 40%;
     }
-
-    @media screen and (min-width: 989px) and (max-width: 1200px) {
-      .panel {
-        height: 50px;
-        width: 30px;
-        border: 1px solid #E7EDF2;
-      }
-
-      /*--------------------Pointer Animation -----------------------*/
-
-      #pointer {
-          width: 150px;
-
-      }
-        @keyframes slidePointer {
-          0% , 25%{
-            left: 40%;
-          }
-          25%, 50% {
-            left: 57%;
-          }
-          50% , 75%{
-            left: 46%;
-          }
-          75%, 100% {
-            left: 52%;
-          }
-          0% , 25%{
-            top: 20px;
-          }
-          25%, 50% {
-            top: 20px;
-          }
-          50% , 75%{
-            top: 85px;
-          }
-          75%, 100% {
-            top: 85px;
-          }
-        }
-
-      /*-------------------- Dot Animation -----------------------*/
-
-      .dot {
-        height: 25px;
-        width: 25px;
-
-      }
-
-      @keyframes dot {
-        0% , 25%{
-          left: 40%;
-          opacity: 1;
-        }
-        25%, 50% {
-          left: 57%;
-          opacity: 0;
-        }
-        50%, 51% {
-          left: 46%;
-          opacity: 1;
-        }
-        75%, 100% {
-          left: 52%;
-          opacity: 0;
-        }
-        0% , 25%{
-          top: 20px;
-        }
-        25%, 50% {
-          top: 20px;
-        }
-        50% , 75%{
-          top: 85px;
-        }
-        75%, 100% {
-          top: 85px;
-        }
-      }
-
-
-  }
-
-
-  @media screen and (min-width: 768px) and (max-width: 988px) {
-    .panel {
-      height: 30px;
-      width: 18px;
-      border: 1px solid #E7EDF2;
+      .dot2 {
+      left: 44%;
     }
-
     /*--------------------Pointer Animation -----------------------*/
 
-    #pointer {
-        width: 150px;
-
-    }
       @keyframes slidePointer {
-        0% , 25%{
+        0% , 10%{
           left: 41%;
+          top: 25px;
         }
-        25%, 50% {
-          left: 54%;
+        10%, 26% {
+          left: 41%;
+          top: 25px;
         }
-        50% , 75%{
-          left: 46%;
-        }
-        75%, 100% {
-          left: 52%;
-        }
-        0% , 25%{
-          top: 10px;
-        }
-        25%, 50% {
-          top: 10px;
+        26%, 50% {
+          left: 58%;
+          top: 25px;
         }
         50% , 75%{
-          top: 50px;
+          left: 45%;
+          top: 85px;
         }
         75%, 100% {
-          top: 50px;
+          left: 55%;
+          top: 85px;
+        }
+
+      }
+    }
+
+    @media screen and (max-width: 1080px ) {
+      /* Mobile to Tablet */
+  
+        /*-------------------- Dot Animation --------------------*/
+          .dot {
+          left: 35%;
+        }
+          .dot2 {
+          left: 42%;
+        }
+        /*--------------------Pointer Animation -----------------------*/
+        #pointer {
+          background-image: url(pointer.png);
+          height: 90px;
+          width: 60px;
+         }
+          @keyframes slidePointer {
+            0% , 10%{
+              left: 36%;
+              top: 25px;
+            }
+            10%, 26% {
+              left: 37%;
+              top: 25px;
+            }
+            26%, 50% {
+              left: 62%;
+              top: 25px;
+            }
+            50% , 75%{
+              left: 43%;
+              top: 85px;
+            }
+            75%, 100% {
+              left: 56%;
+              top: 85px;
+            }
+    
+          }
+        }
+
+
+    @media screen and (max-width: 767px ) {
+    /* Zero to Mobile */
+
+      /*-------------------- Dot Animation --------------------*/
+        .dot {
+        left: 12%;
+      }
+        .dot2 {
+        left: 28%;
+      }
+      /*--------------------Pointer Animation -----------------------*/
+  
+       #pointer {
+        background-image: url(pointer.png);
+        height: 90px;
+        width: 60px;
+       }
+
+        @keyframes slidePointer {
+          0% , 10%{
+            left: 16%;
+            top: 25px;
+          }
+          10%, 26% {
+            left: 16%;
+            top: 25px;
+          }
+          26%, 50% {
+            left: 80%;
+            top: 25px;
+          }
+          50% , 75%{
+            left: 30%;
+            top: 85px;
+          }
+          75%, 100% {
+            left: 65%;
+            top: 85px;
+          }
+  
         }
       }
-
-    /*-------------------- Dot Animation -----------------------*/
-
-    .dot {
-      height: 25px;
-      width: 25px;
-
-    }
-
-    @keyframes dot {
-      0% , 25%{
-        left: 41%;
-        opacity: 1;
-      }
-      25%, 50% {
-        left: 54%;
-        opacity: 0;
-      }
-      50%, 51% {
-        left: 46%;
-        opacity: 1;
-      }
-      75%, 100% {
-        left: 52%;
-        opacity: 0;
-      }
-      0% , 25%{
-        top: 10px;
-      }
-      25%, 50% {
-        top: 10px;
-      }
-      50% , 75%{
-        top: 50px;
-      }
-      75%, 100% {
-        top: 50px;
-      }
-    }
-
-
-}
-
-@media screen and (min-width: 1441px) {
-  .panel {
-    height: 50px;
-    width: 35px;
-    border: 1px solid #E7EDF2;
-  }
-
-  /*--------------------Pointer Animation -----------------------*/
-
-  #pointer {
-      width: 150px;
-
-  }
-    @keyframes slidePointer {
-      0% , 25%{
-        left: 43%;
-      }
-      25%, 50% {
-        left: 55%;
-      }
-      50% , 75%{
-        left: 46%;
-      }
-      75%, 100% {
-        left: 52%;
-      }
-      0% , 25%{
-        top: 10px;
-      }
-      25%, 50% {
-        top: 10px;
-      }
-      50% , 75%{
-        top: 60px;
-      }
-      75%, 100% {
-        top: 60px;
-      }
-    }
-
-  /*-------------------- Dot Animation -----------------------*/
-
-  .dot {
-    height: 25px;
-    width: 25px;
-
-  }
-
-  @keyframes dot {
-    0% , 25%{
-      left: 43%;
-      opacity: 1;
-    }
-    25%, 50% {
-      left: 55%;
-      opacity: 0;
-    }
-    50%, 51% {
-      left: 46%;
-      opacity: 1;
-    }
-    75%, 100% {
-      left: 52%;
-      opacity: 0;
-    }
-    0% , 25%{
-      top: 10px;
-    }
-    25%, 50% {
-      top: 10px;
-    }
-    50% , 75%{
-      top: 60px;
-    }
-    75%, 100% {
-      top: 60px;
-    }
-  }
-
-
-}
