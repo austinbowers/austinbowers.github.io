@@ -63,14 +63,18 @@
 /*----------END------------- Touch Gesture Animation --------------------*/
 /*-----------------------------------------------------------------------*/
 
-/*----------START------------Pointer Animation --------------------------*/
+/*---------START------------Pointer Animation ---------------------------*/
   .pointer {
-    width: 10%;
+    width: 8%;
+    height: 90%;
     position: absolute;
     z-index: 100;
     animation-name: slidePointer;
     animation-iteration-count: infinite;
     animation-duration: 5s;
+    background-image: url(mouse-pointer.png);
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 
   @keyframes slidePointer {
@@ -103,7 +107,7 @@
 /*--------START-------- Panels and Opacity Keyframes ------------------*/
 .panel {
   height: 4vw;
-  width: 3vw;
+  width: 2.8vw;
   background-color: rgba(45, 119, 204, 0.651);
   border: 1px solid #E7EDF2;
   animation-iteration-count: infinite;
@@ -265,4 +269,25 @@
     #gesture-two {
       left: 42%;
     }
+    .pointer {
+      width: 120px;
+      height: 200px;
+      background-image: url(pointer.png);
+      transform: translateX(-3vw);
+      background-size: 100%;
+    }
+}
+
+@media screen and (max-width: 700px ) {
+  /* <md screen */
+  #gesture-one {
+    width: 7%;
+    left: 36%;
+  }
+  #gesture-two {
+    width: 7%;
+  }
+  .pointer {
+    transform: translateX(-6vw);
+  }
 }
