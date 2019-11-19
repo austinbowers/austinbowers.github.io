@@ -1,44 +1,39 @@
-#background {
-  background-image: url(roof.png);
-  background-position: center middle;
+#background-container {
+  background-image: url(roof.jpg);
+  background-position: center;
   background-size: 100%;
-  height: 600px;
   background-repeat: no-repeat;
+  height: 600px;
 }
 
-/*-------------------- Dot Animation -----------------------*/
-
-.dot {
-  height: 40px;
-  width: 40px;
-  background-image: url(touch-gesture.png);
-  background-size: cover;
-  border-radius: 50%;
-  position: absolute;
-  z-index: 99;
-  top: 10px;
-  animation-name: dot;
-  animation-iteration-count: infinite;
-  animation-duration: 5s;
-  left: 43%;
+#relative-vertical-center {
+  position: relative;
+  top: 50%;
 }
-.dot2 {
-  height: 40px;
-  width: 40px;
-  background-image: url(touch-gesture.png);
-  background-size: cover;
-  border-radius: 50%;
-  position: absolute;
+
+/*--------START----------- Touch Gesture Animation ----------------------*/
+.touch-gesture {
+  width: 5%;
   z-index: 99;
-  top: 75px;
-  animation-name: dot2;
   animation-iteration-count: infinite;
   animation-duration: 5s;
-  left: 46.2%;
+  position: absolute;
+}
+
+#gesture-one {
+  animation-name: gesture1;
+  background-size: cover;
+  top: 1%;
+  left: 37%;
+}
+#gesture-two {
+  animation-name: gesture2;
+  top: 50%;
+  left: 42%;
   opacity: 0;
 }
 
-@keyframes dot {
+@keyframes gesture1 {
   0%, 5%, 25%{
     opacity: 1;
   }
@@ -48,93 +43,83 @@
   50%, 100% {
     opacity: 0;
   }
-
 }
-@keyframes dot2 {
 
+@keyframes gesture2 {
   50%, 51% {
     opacity: 0;
   }
   51%, 80%  {
-
     opacity: 1;
   }
   80%, 85% {
-
     opacity: 0;
   }
   75%, 100% {
-
     opacity: 0;
   }
-
 }
 
+/*----------END------------- Touch Gesture Animation --------------------*/
+/*-----------------------------------------------------------------------*/
 
-/*--------------------Pointer Animation -----------------------*/
-
-#pointer {
-  height: 130px;
-  width: 100px;
-  background-image: url(mouse-pointer.png);
-  background-size: cover;
-  transform: rotate(-20deg);
+/*----------START------------Pointer Animation --------------------------*/
+  .pointer {
+    width: 10%;
     position: absolute;
     z-index: 100;
     animation-name: slidePointer;
     animation-iteration-count: infinite;
     animation-duration: 5s;
-}
+  }
 
   @keyframes slidePointer {
     0% , 10%{
-      left: 44%;
-      top: 25px;
+      left: 37%;
+      top: 15%;
     }
     10%, 26% {
-      left: 44%;
-      top: 25px;
+      left: 37%;
+      top: 15%;
     }
     26%, 50% {
-      left: 56%;
-      top: 25px;
+      left: 62%;
+      top: 15%;
     }
     50% , 75%{
-      left: 47%;
-      top: 85px;
+      left: 42%;
+      top: 65%;
     }
     75%, 100% {
-      left: 53%;
-      top: 85px;
+      left: 55%;
+      top: 65%;
     }
-
   }
 
-/*------------ Panels and Opacity Keyframes ---------------*/
+/*-------END------------- Pointer Animation ---------------------------*/
+/*---------------------------------------------------------------------*/
 
-.panel {  
-  height: 60px;
-  width: 40px;
+
+/*--------START-------- Panels and Opacity Keyframes ------------------*/
+.panel {
+  height: 4vw;
+  width: 3vw;
   background-color: rgba(45, 119, 204, 0.651);
-  border: 2px solid #E7EDF2;
+  border: 1px solid #E7EDF2;
   animation-iteration-count: infinite;
   animation-duration: 5s;
   animation-timing-function: ease-in-out;
 }
 
-
 #top-one {
   animation-name: opacitychanger1;
 }
-
 #top-two {
   animation-name: opacitychanger2;
 }
-
 #top-three {
   animation-name: opacitychanger3;
 }
-
 #top-four {
   animation-name: opacitychanger4;
 }
@@ -147,23 +132,18 @@
 #top-seven {
   animation-name: opacitychanger7;
 }
-
 #bottom-one {
   animation-name: opacitychanger8;
 }
-
 #bottom-two {
   animation-name: opacitychanger9;
 }
-
 #bottom-three {
   animation-name: opacitychanger10;
 }
-
 #bottom-four {
   animation-name: opacitychanger11;
 }
-
 
 @keyframes opacitychanger1 { /* For Panel #1 */
   0% , 3%{
@@ -173,7 +153,7 @@
     opacity: 0;
   }
   10%, 100% {
-      opacity: 1;
+    opacity: 1;
   }
 }
 @keyframes opacitychanger2 { /* For Panel #2 */
@@ -181,7 +161,7 @@
     opacity: 0;
   }
  12%, 100% {
-      opacity: 1;
+    opacity: 1;
   }
 }
 @keyframes opacitychanger3 { /* For Panel #3 */
@@ -189,7 +169,7 @@
     opacity: 0;
   }
   13%, 100% {
-      opacity: 1;
+    opacity: 1;
   }
 }
 @keyframes opacitychanger4 { /* For Panel #4 */
@@ -197,7 +177,7 @@
     opacity: 0;
   }
   14%, 100% {
-      opacity: 1;
+    opacity: 1;
   }
 }
 @keyframes opacitychanger5 { /* For Panel #5 */
@@ -205,7 +185,7 @@
     opacity: 0;
   }
   17%, 100% {
-      opacity: 1;
+    opacity: 1;
   }
 }
 @keyframes opacitychanger6 { /* For Panel #6 */
@@ -213,7 +193,7 @@
     opacity: 0;
   }
   20%, 100% {
-      opacity: 1;
+    opacity: 1;
   }
 }
 @keyframes opacitychanger7 { /* For Panel #7 */
@@ -221,7 +201,7 @@
     opacity: 0;
   }
   23%, 100% {
-      opacity: 1;
+    opacity: 1;
   }
 }
 @keyframes opacitychanger8 { /* For Panel #8 */
@@ -232,7 +212,7 @@
     opacity: 0;
   }
   55%, 100% {
-      opacity: 1;
+    opacity: 1;
   }
 }
 @keyframes opacitychanger9 { /* For Panel #9 */
@@ -240,7 +220,7 @@
     opacity: 0;
   }
   55%, 100% {
-      opacity: 1;
+    opacity: 1;
   }
 }
 @keyframes opacitychanger10 { /* For Panel #10 */
@@ -248,7 +228,7 @@
     opacity: 0;
   }
   58%, 100% {
-      opacity: 1;
+    opacity: 1;
   }
 }
 @keyframes opacitychanger11 { /* For Panel #11 */
@@ -256,133 +236,33 @@
     opacity: 0;
   }
   62%, 100% {
-      opacity: 1;
+    opacity: 1;
   }
 }
+
+/*-------END------------- Panel and Opacity Keyframes -------------------*/
+/*-----------------------------------------------------------------------*/
 
 
 /*-------------------------------------------------------------------------*/
 /*----------------------------- Media Queries -----------------------------*/
 /*-------------------------------------------------------------------------*/
 
-  @media screen and (max-width: 1440px ) {
-    /* Tablet to Laptop */
-
-    /*-------------------- Dot Animation --------------------*/
-      .dot {
-      left: 40%;
+@media screen and (min-width: 1200px ) {
+    /* <lg screen */
+    .panel {
+      height: 60px;
+      width: 40px;
+      border: 2px solid #E7EDF2;
     }
-      .dot2 {
-      left: 44%;
+}
+
+@media screen and (max-width: 1200px ) {
+    /* <md screen */
+    #gesture-one {
+      left: 37%;
     }
-    /*--------------------Pointer Animation -----------------------*/
-
-      @keyframes slidePointer {
-        0% , 10%{
-          left: 41%;
-          top: 25px;
-        }
-        10%, 26% {
-          left: 41%;
-          top: 25px;
-        }
-        26%, 50% {
-          left: 58%;
-          top: 25px;
-        }
-        50% , 75%{
-          left: 45%;
-          top: 85px;
-        }
-        75%, 100% {
-          left: 55%;
-          top: 85px;
-        }
-
-      }
+    #gesture-two {
+      left: 42%;
     }
-
-    @media screen and (max-width: 1080px ) {
-      /* Mobile to Tablet */
-  
-        /*-------------------- Dot Animation --------------------*/
-          .dot {
-          left: 35%;
-        }
-          .dot2 {
-          left: 42%;
-        }
-        /*--------------------Pointer Animation -----------------------*/
-        #pointer {
-          background-image: url(pointer.png);
-          height: 180px;
-          width: 120px;
-         }
-          @keyframes slidePointer {
-            0% , 10%{
-              left: 36%;
-              top: 25px;
-            }
-            10%, 26% {
-              left: 37%;
-              top: 25px;
-            }
-            26%, 50% {
-              left: 62%;
-              top: 25px;
-            }
-            50% , 75%{
-              left: 43%;
-              top: 85px;
-            }
-            75%, 100% {
-              left: 56%;
-              top: 85px;
-            }
-    
-          }
-        }
-
-
-    @media screen and (max-width: 767px ) {
-    /* Zero to Mobile */
-
-      /*-------------------- Dot Animation --------------------*/
-        .dot {
-        left: 12%;
-      }
-        .dot2 {
-        left: 28%;
-      }
-      /*--------------------Pointer Animation -----------------------*/
-  
-       #pointer {
-        background-image: url(pointer.png);
-        height: 90px;
-        width: 60px;
-       }
-
-        @keyframes slidePointer {
-          0% , 10%{
-            left: 16%;
-            top: 25px;
-          }
-          10%, 26% {
-            left: 16%;
-            top: 25px;
-          }
-          26%, 50% {
-            left: 80%;
-            top: 25px;
-          }
-          50% , 75%{
-            left: 30%;
-            top: 85px;
-          }
-          75%, 100% {
-            left: 65%;
-            top: 85px;
-          }
-  
-        }
-      }
+}
