@@ -1,4 +1,4 @@
-#background-container {
+.background-container {
   background-image: url(roof-image.jpg);
   background-position: top center;
   background-size: 100%;
@@ -8,8 +8,8 @@
 
 .animation-position {
   position: relative;
-  top: 16vw;
-  left: 52.5%;
+  top: 16.5vw;
+  left: 55%;
 }
 
 .panel-row {
@@ -30,13 +30,13 @@
   position: absolute;
 }
 
-#gesture-one {
+.gesture-one {
   animation-name: gesture1;
   top: -1.8vw;
   left: -2vw;
   opacity: 0;
 }
-#gesture-two {
+.gesture-two {
   animation-name: gesture2;
   top: -.2vw;
   left: -2vw;
@@ -106,7 +106,7 @@
       top: .5vw;
     }
     26%, 50% {
-      left: 11%;
+      left: 13%;
       top: .5vw;
     }
     50% , 75%{
@@ -114,12 +114,12 @@
       top: 2vw;
     }
     75%, 99% {
-      left: 9%;
+      left: 11%;
       top: 2vw;
       opacity: 1;
     }
     99%, 100% {
-      left: 9%;
+      left: 11%;
       top: 2vw;
       opacity: 0;
     }
@@ -131,8 +131,8 @@
 
 /*--------START-------- Panels and Opacity Keyframes ------------------*/
 .panel {
-  height: 1.3vw;
-  width: .9vw;
+  height: 1.5vw;
+  width: 1.1vw;
   margin: .03vw;
   background-color: rgba(45, 119, 204, 0.651);
   border: 1px solid #E7EDF2;
