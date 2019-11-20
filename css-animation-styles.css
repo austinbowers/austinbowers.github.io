@@ -1,20 +1,31 @@
 #background-container {
-  background-image: url(roof.jpg);
-  background-position: center;
+  background-image: url(roof-image.jpg);
+  background-position: top center;
   background-size: 100%;
   background-repeat: no-repeat;
-  height: 600px;
+  height: 100vw;
 }
 
-#relative-vertical-center {
+.animation-position {
   position: relative;
-  top: 50%;
+  top: 13vw;
+  left: 6%;
 }
+
+.panel-row {
+  display: flex;
+  position: relative;
+}
+
 
 /*--------START----------- Touch Gesture Animation ----------------------*/
 .touch-gesture {
-  width: 5%;
-  z-index: 99;
+  width: 2vw;
+  height: 2vw;
+  background-image: url(touch-gesture.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 1;
   animation-iteration-count: infinite;
   animation-duration: 5s;
   position: absolute;
@@ -22,14 +33,13 @@
 
 #gesture-one {
   animation-name: gesture1;
-  background-size: cover;
-  top: 1%;
-  left: 37%;
+  top: -0.2vw;
+  left: -.8vw;
 }
 #gesture-two {
   animation-name: gesture2;
-  top: 50%;
-  left: 42%;
+  top: -0.2vw;
+  left: -.8vw;
   opacity: 0;
 }
 
@@ -65,8 +75,8 @@
 
 /*---------START------------Pointer Animation ---------------------------*/
   .pointer {
-    width: 8%;
-    height: 90%;
+    width: 3vw;
+    height: 3vw;
     position: absolute;
     z-index: 100;
     animation-name: slidePointer;
@@ -79,24 +89,24 @@
 
   @keyframes slidePointer {
     0% , 10%{
-      left: 37%;
-      top: 15%;
+      left: 0%;
+      top: .5vw;
     }
     10%, 26% {
-      left: 37%;
-      top: 15%;
+      left: 0%;
+      top: .5vw;
     }
     26%, 50% {
-      left: 62%;
-      top: 15%;
+      left: 100%;
+      top: .5vw;
     }
     50% , 75%{
-      left: 42%;
-      top: 65%;
+      left: 0%;
+      top: 2vw;
     }
     75%, 100% {
-      left: 55%;
-      top: 65%;
+      left: 60%;
+      top: 2vw;
     }
   }
 
@@ -106,8 +116,8 @@
 
 /*--------START-------- Panels and Opacity Keyframes ------------------*/
 .panel {
-  height: 4vw;
-  width: 2.8vw;
+  height: 1.3vw;
+  width: .9vw;
   background-color: rgba(45, 119, 204, 0.651);
   border: 1px solid #E7EDF2;
   animation-iteration-count: infinite;
@@ -254,24 +264,14 @@
 
 @media screen and (min-width: 1200px ) {
     /* <lg screen */
-    .panel {
-      height: 60px;
-      width: 40px;
-      border: 2px solid #E7EDF2;
-    }
+    
 }
 
 @media screen and (max-width: 1200px ) {
     /* <md screen */
-    #gesture-one {
-      left: 37%;
-    }
-    #gesture-two {
-      left: 42%;
-    }
     .pointer {
-      width: 120px;
-      height: 200px;
+      width: 10vw;
+      height: 15vw;
       background-image: url(pointer.png);
       transform: translateX(-3vw);
       background-size: 100%;
@@ -280,14 +280,7 @@
 
 @media screen and (max-width: 700px ) {
   /* <md screen */
-  #gesture-one {
-    width: 7%;
-    left: 36%;
-  }
-  #gesture-two {
-    width: 7%;
-  }
   .pointer {
-    transform: translateX(-9vw);
+    transform: translateX(-3vw);
   }
 }
