@@ -14,15 +14,14 @@
 
 .panel-row {
   display: flex;
-
 }
 
 
 /*--------START----------- Touch Gesture Animation ----------------------*/
 .touch-gesture {
-  width: 2vw;
-  height: 2vw;
-  background-image: url(touch-gesture.png);
+  width: 5vw;
+  height: 5vw;
+  background-image: url(touch-screen.png);
   background-size: cover;
   background-repeat: no-repeat;
   z-index: 1;
@@ -33,14 +32,14 @@
 
 #gesture-one {
   animation-name: gesture1;
-  top: -0.4vw;
-  left: -.5vw;
+  top: -1.8vw;
+  left: -2vw;
   opacity: 0;
 }
 #gesture-two {
   animation-name: gesture2;
-  top: 1.2vw;
-  left: -.3vw;
+  top: -.2vw;
+  left: -2vw;
   opacity: 0;
 }
 
@@ -111,7 +110,7 @@
       top: .5vw;
     }
     50% , 75%{
-      left: 0%;
+      left: -0.5%;
       top: 2vw;
     }
     75%, 99% {
