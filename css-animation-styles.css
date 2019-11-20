@@ -3,18 +3,18 @@
   background-position: top center;
   background-size: 100%;
   background-repeat: no-repeat;
-  height: 100vw;
+  height: 100vh;
 }
 
 .animation-position {
   position: relative;
-  top: 13vw;
-  left: 6%;
+  top: 16vw;
+  left: 52.5%;
 }
 
 .panel-row {
   display: flex;
-  position: relative;
+
 }
 
 
@@ -26,24 +26,28 @@
   background-size: cover;
   background-repeat: no-repeat;
   z-index: 1;
-  animation-iteration-count: infinite;
+  animation-iteration-count: 2;
   animation-duration: 5s;
   position: absolute;
 }
 
 #gesture-one {
   animation-name: gesture1;
-  top: -0.2vw;
-  left: -.8vw;
+  top: -0.4vw;
+  left: -.5vw;
+  opacity: 0;
 }
 #gesture-two {
   animation-name: gesture2;
-  top: -0.2vw;
-  left: -.8vw;
+  top: 1.2vw;
+  left: -.3vw;
   opacity: 0;
 }
 
 @keyframes gesture1 {
+  0%, 1%{
+    opacity: 1;
+  }
   0%, 5%, 25%{
     opacity: 1;
   }
@@ -80,14 +84,20 @@
     position: absolute;
     z-index: 100;
     animation-name: slidePointer;
-    animation-iteration-count: infinite;
+    animation-iteration-count: 2 ;
     animation-duration: 5s;
     background-image: url(mouse-pointer.png);
     background-size: cover;
     background-repeat: no-repeat;
+    opacity: 0;
   }
 
   @keyframes slidePointer {
+    0%, 1% {
+      left: 0%;
+      top: .5vw;
+      opacity: 1;
+    }
     0% , 10%{
       left: 0%;
       top: .5vw;
@@ -97,16 +107,22 @@
       top: .5vw;
     }
     26%, 50% {
-      left: 100%;
+      left: 11%;
       top: .5vw;
     }
     50% , 75%{
       left: 0%;
       top: 2vw;
     }
-    75%, 100% {
-      left: 60%;
+    75%, 99% {
+      left: 9%;
       top: 2vw;
+      opacity: 1;
+    }
+    99%, 100% {
+      left: 9%;
+      top: 2vw;
+      opacity: 0;
     }
   }
 
@@ -118,9 +134,10 @@
 .panel {
   height: 1.3vw;
   width: .9vw;
+  margin: .03vw;
   background-color: rgba(45, 119, 204, 0.651);
   border: 1px solid #E7EDF2;
-  animation-iteration-count: infinite;
+  animation-iteration-count: 2;
   animation-duration: 5s;
   animation-timing-function: ease-in-out;
 }
@@ -146,17 +163,44 @@
 #top-seven {
   animation-name: opacitychanger7;
 }
-#bottom-one {
+#top-eight {
   animation-name: opacitychanger8;
 }
-#bottom-two {
+#top-nine {
   animation-name: opacitychanger9;
 }
-#bottom-three {
+#top-ten {
   animation-name: opacitychanger10;
 }
-#bottom-four {
+#top-eleven {
   animation-name: opacitychanger11;
+}
+#bottom-one {
+  animation-name: opacitychanger12;
+}
+#bottom-two {
+  animation-name: opacitychanger13;
+}
+#bottom-three {
+  animation-name: opacitychanger14;
+}
+#bottom-four {
+  animation-name: opacitychanger15;
+}
+#bottom-five {
+  animation-name: opacitychanger16;
+}
+#bottom-six {
+  animation-name: opacitychanger17;
+}
+#bottom-seven {
+  animation-name: opacitychanger18;
+}
+#bottom-eight {
+  animation-name: opacitychanger19;
+}
+#bottom-nine {
+  animation-name: opacitychanger20;
 }
 
 @keyframes opacitychanger1 { /* For Panel #1 */
@@ -171,14 +215,22 @@
   }
 }
 @keyframes opacitychanger2 { /* For Panel #2 */
-  0%, 10%, 12%{
+  0%, 10%, 11%{
     opacity: 0;
   }
- 12%, 100% {
+ 11%, 100% {
     opacity: 1;
   }
 }
 @keyframes opacitychanger3 { /* For Panel #3 */
+  0%, 11%, 12%{
+    opacity: 0;
+  }
+  12%, 100% {
+    opacity: 1;
+  }
+}
+@keyframes opacitychanger4 { /* For Panel #4 */
   0%, 12%, 13%{
     opacity: 0;
   }
@@ -186,7 +238,7 @@
     opacity: 1;
   }
 }
-@keyframes opacitychanger4 { /* For Panel #4 */
+@keyframes opacitychanger5 { /* For Panel #5 */
   0%, 13%, 14%{
     opacity: 0;
   }
@@ -194,62 +246,126 @@
     opacity: 1;
   }
 }
-@keyframes opacitychanger5 { /* For Panel #5 */
-  0%, 14%, 17%{
+@keyframes opacitychanger6 { /* For Panel #6 */
+  0%, 14%, 15%{
+    opacity: 0;
+  }
+  15%, 100% {
+    opacity: 1;
+  }
+}
+@keyframes opacitychanger7 { /* For Panel #7 */
+  0%, 15%, 16%{
+    opacity: 0;
+  }
+  16%, 100% {
+    opacity: 1;
+  }
+}
+@keyframes opacitychanger8 { /* For Panel #8 */
+  0%, 16%, 17%{
     opacity: 0;
   }
   17%, 100% {
     opacity: 1;
   }
 }
-@keyframes opacitychanger6 { /* For Panel #6 */
-  0%, 17%, 20%{
+@keyframes opacitychanger9 { /* For Panel #9 */
+  0%, 17%, 18%{
+    opacity: 0;
+  }
+  18%, 100% {
+    opacity: 1;
+  }
+}
+@keyframes opacitychanger10 { /* For Panel #10 */
+  0%, 18%, 19%{
+    opacity: 0;
+  }
+  19%, 100% {
+    opacity: 1;
+  }
+}
+@keyframes opacitychanger11 { /* For Panel #11 */
+  0%, 19%, 20%{
     opacity: 0;
   }
   20%, 100% {
     opacity: 1;
   }
 }
-@keyframes opacitychanger7 { /* For Panel #7 */
-  0%, 20%, 23%{
-    opacity: 0;
-  }
-  23%, 100% {
-    opacity: 1;
-  }
-}
-@keyframes opacitychanger8 { /* For Panel #8 */
+@keyframes opacitychanger12 { /* For Panel #12 */
     0% , 50%{
     opacity: 0;
   }
-  50% , 55%{
+  50% , 53%{
     opacity: 0;
   }
-  55%, 100% {
+  53%, 100% {
     opacity: 1;
   }
 }
-@keyframes opacitychanger9 { /* For Panel #9 */
-  0%, 52%, 55%{
+@keyframes opacitychanger13 { /* For Panel #13 */
+  0%, 53%, 54%{
     opacity: 0;
   }
-  55%, 100% {
+  54%, 100% {
     opacity: 1;
   }
 }
-@keyframes opacitychanger10 { /* For Panel #10 */
-  0%, 55%, 58%{
+@keyframes opacitychanger14 { /* For Panel #14 */
+  0%, 55%, 56%{
+    opacity: 0;
+  }
+  56%, 100% {
+    opacity: 1;
+  }
+}
+@keyframes opacitychanger15 { /* For Panel #15 */
+  0%, 56%, 57%{
+    opacity: 0;
+  }
+  57%, 100% {
+    opacity: 1;
+  }
+}
+@keyframes opacitychanger16 { /* For Panel #16 */
+  0%, 57%, 58%{
     opacity: 0;
   }
   58%, 100% {
     opacity: 1;
   }
 }
-@keyframes opacitychanger11 { /* For Panel #11 */
-  0%, 58%, 62%{
+@keyframes opacitychanger17 { /* For Panel #17 */
+  0%, 58%, 59%{
+    opacity: 0;
+  }
+  59%, 100% {
+    opacity: 1;
+  }
+}
+@keyframes opacitychanger18 { /* For Panel #18 */
+  0%, 59%, 60%{
+    opacity: 0;
+  }
+  60%, 100% {
+    opacity: 1;
+  }
+}
+@keyframes opacitychanger19 { /* For Panel #19 */
+  0%, 61%, 62%{
     opacity: 0;
   }
   62%, 100% {
+    opacity: 1;
+  }
+}
+@keyframes opacitychanger20 { /* For Panel #20 */
+  0%, 62%, 63%{
+    opacity: 0;
+  }
+  63%, 100% {
     opacity: 1;
   }
 }
