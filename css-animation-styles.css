@@ -353,13 +353,69 @@
       background-size: 120%;
       height: 700px;
     }
+    .panel {
+      height: 2vw;
+      width: 1.3vw;
+      margin: .03vw;
+    }
     .animation-position {
       position: relative;
       object-fit: cover;
       top: 20vw;
       left: 56%;
-      width: 12vw;
+      width: 20vw;
     }
+    @keyframes slidePointer {
+      0%, 1% {
+        left: 0%;
+        top: .5vw;
+        opacity: 1;
+      }
+      0% , 10%{
+        left: 0%;
+        top: .5vw;
+  
+      }
+      10%, 26% {
+        left: 0%;
+        top: .5vw;
+        width: 3vw;
+        height: 3vw;
+      }
+      26%, 50% {
+        left: 75%;
+        top: .5vw;
+        width: 3vw;
+        height: 3vw;
+      }
+      50% , 55%{
+        left: -0.5%;
+        top: 3vw;
+        width: 5vw;
+        height: 5vw;
+      }
+      55% , 75%{
+        left: -0.5%;
+        top: 3vw;
+        width: 3vw;
+        height: 3vw;
+      }
+      75%, 99% {
+        left: 60%;
+        top: 3vw;
+        opacity: 1;
+      }
+      99%, 100% {
+        left: 60%;
+        top: 3vw;
+        opacity: 0;
+      }
+    }
+  
+  /*-------END------------- Pointer Animation ---------------------------*/
+  /*---------------------------------------------------------------------*/
+  
+
 
 }
 
