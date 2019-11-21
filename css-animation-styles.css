@@ -22,7 +22,7 @@
   object-fit: cover;
   top: 16.5vw;
   left: 55%;
-  width: 12vw;
+  width: 13%;
 }
 
 .panel-row {
@@ -36,7 +36,7 @@
     position: absolute;
     z-index: 1;
     animation-name: slidePointer;
-    animation-iteration-count: 2 ;
+    animation-iteration-count: 2;
     animation-duration: 8s;
     background-image: url(mouse-pointer.png);
     background-size: cover;
