@@ -26,7 +26,7 @@
   background-repeat: no-repeat;
   z-index: 1;
   animation-iteration-count: 2;
-  animation-duration: 5s;
+  animation-duration: 10s;
   position: absolute;
 }
 
@@ -84,8 +84,8 @@
     z-index: 100;
     animation-name: slidePointer;
     animation-iteration-count: 2 ;
-    animation-duration: 5s;
-    background-image: url(mouse-pointer.png);
+    animation-duration: 10s;
+    background-image: url(mouse-pointer2.png);
     background-size: cover;
     background-repeat: no-repeat;
     opacity: 0;
@@ -137,7 +137,7 @@
   background-color: rgba(45, 119, 204, 0.651);
   border: 1px solid #E7EDF2;
   animation-iteration-count: 2;
-  animation-duration: 5s;
+  animation-duration: 10s;
   animation-timing-function: ease-in-out;
 }
 
