@@ -1,12 +1,13 @@
 .background-container {
   background-image: url(roof-image.jpg);
   background-position: center top;
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
-  height: 700px;
+  height: 800px;
   z-index: 0;
   position: relative;
 }
+
 
 .faded-gradient-bottom {
   background: transparent linear-gradient(180deg, #01579200 0%, #015792F3 64%, #015792 100%) 0% 0% no-repeat padding-box;
@@ -33,7 +34,7 @@
     width: 5vw;
     height: 5vw;
     position: absolute;
-    z-index: 100;
+    z-index: 1;
     animation-name: slidePointer;
     animation-iteration-count: 2 ;
     animation-duration: 8s;
@@ -346,14 +347,37 @@
     /* <lg screen */
 }
 
-@media screen and (max-width: 1200px ) {
+@media screen and (max-width: 1366px ) {
     /* <md screen */
+    .background-container{
+      background-size: 120%;
+      height: 700px;
+    }
+    .animation-position {
+      position: relative;
+      object-fit: cover;
+      top: 20vw;
+      left: 56%;
+      width: 12vw;
+    }
+
+}
+
+@media screen and (max-width: 985px ) {
+    /* <md screen */
+    .background-container{
+      background-size: cover;
+      background-position: center;
+  
+    }
+    .animation-position {
+      position: relative;
+      object-fit: cover;
+      top: 25vw;
+      left: 58%;
+      width: 12vw;
+    }
     .pointer {
       background-image: url(pointer.png);
     }
-}
-
-@media screen and (max-width: 700px ) {
-    /* <md screen */
-
 }
