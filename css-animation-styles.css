@@ -1,13 +1,24 @@
 .background-container {
   background-image: url(roof-image.jpg);
-  background-position: top center;
+  background-position: center top;
   background-size: 100%;
   background-repeat: no-repeat;
-  height: 92vh;
+  height: 700px;
+  z-index: 0;
+  position: relative;
+}
+
+.faded-gradient-bottom {
+  background: transparent linear-gradient(180deg, #01579200 0%, #015792F3 64%, #015792 100%) 0% 0% no-repeat padding-box;
+  width: 100%;
+  bottom: 0;
+  height: 256px;
+  position: absolute;
 }
 
 .animation-position {
   position: relative;
+  object-fit: cover;
   top: 16.5vw;
   left: 55%;
   width: 12vw;
