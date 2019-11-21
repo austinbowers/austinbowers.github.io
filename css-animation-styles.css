@@ -365,19 +365,84 @@
 
 @media screen and (max-width: 985px ) {
     /* <md screen */
-    .background-container{
-      background-size: cover;
-      background-position: center;
-  
+    .background-container {
+      background-image: url(roof-image-mobile.jpg);
+      background-position: top center;
+      background-size: 120%;
+      background-repeat: no-repeat;
+      height: 800px;
+      z-index: 0;
+      position: relative;
     }
     .animation-position {
       position: relative;
-      object-fit: cover;
-      top: 25vw;
-      left: 58%;
-      width: 12vw;
+      top: 28vw;
+      left: 32%;
+      width: 32vw;
+    }
+    .panel {
+      height: 4vw;
+      width: 3vw;
+      margin: .03vw;
     }
     .pointer {
       background-image: url(pointer.png);
+      transform: rotate(-15deg);
+      width: 30vw;
+      height: 30vw;
     }
+
+/*---------START------------Pointer Animation ---------------------------*/
+
+
+  @keyframes slidePointer {
+    0%, 1% {
+      left: -4%;
+      top: .5vw;
+      opacity: 1;
+    }
+    0% , 10%{
+      left: -4%;
+      top: .5vw;
+
+    }
+    10%, 26% {
+      left: -4%;
+      top: .5vw;
+      width: 20vw;
+      height: 20vw;
+    }
+    26%, 50% {
+      left: 90%;
+      top: .5vw;
+      width: 20vw;
+      height: 20vw;
+    }
+    50% , 55%{
+      left: -4%;
+      top: 4vw;
+      width: 30vw;
+      height: 30vw;
+    }
+    55% , 75%{
+      left: -4%;
+      top: 4vw;
+      width: 20vw;
+      height: 20vw;
+    }
+    75%, 99% {
+      left: 80%;
+      top: 4vw;
+      opacity: 1;
+    }
+    99%, 100% {
+      left: 80%;
+      top: 4vw;
+      opacity: 0;
+    }
+  }
+
+/*-------END------------- Pointer Animation ---------------------------*/
+/*---------------------------------------------------------------------*/
+
 }
