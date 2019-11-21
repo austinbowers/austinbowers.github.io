@@ -57,7 +57,7 @@
         </section>
         <section id="content">
             <div class="background-container">
-                    <div class="animation-position">
+              <div class="animation-position">
                       <div class="panel-row pb-1">
                           <div class="pointer"></div>
                           <div id="top-one" class="panel">
@@ -87,7 +87,14 @@
                           <div id="bottom-eight" class="panel"></div>
                           <div id="bottom-nine" class="panel"></div>
                       </div>
-                    </div>
+              </div>
+              <div class="faded-gradient-bottom">
+                <div class="container">
+                  <div class="row">
+
+                  </div>
+                </div>
+              </div>
               <div class="container">
                 <div class="row pt-5">
                   <div class="col col-lg-6 pt-5">
@@ -110,7 +117,7 @@
                 </div>
               </div>
             </div>
-            <div class="background-cover-image" style="background-image: url('/images/bg-solar-panels-example.jpg');">
+            <div class="background-cover-image" style="background-image: url('https://www.solar-estimate.org/images/bg-solar-panels-example.jpg');">
               <div class="bg-blue-gradient-fade">
                  <div class="container py-5">
                      <div class="row">
@@ -128,53 +135,57 @@
              </div>
             </div>
             <div class="bg-light-gradient">
-                <div class="container py-5">
-                    <div class="row">
-                        <div class="col-12 col-lg-8 mx-auto py-2">
-                            <h2 class="text-md-center">How to use our 4 step solar calculator</h2>
-                        </div>
+              <div class="container py-5">
+                <div class="row">
+                  <div class="col-12 col-lg-8 mx-auto py-2">
+                    <h2 class="text-md-center">How to use our 4 step solar calculator</h2>
+                  </div>
+                </div>
+                <div class="row justify-content-center pt-3 text-center">
+                  <div class="col-12 col-md-6 col-lg-3 d-flex align-items-stretch my-3">
+                    <div class="bg-blue-gradient text-white p-3 w-100">
+                      <h3>Step 1</h3>
+                      <p>Enter your address and monthly power spend</p>
                     </div>
-                    <div class="row justify-content-center pt-3 text-center">
-                        <div class="col-12 col-md-6 col-lg-3 d-flex align-items-stretch my-3">
-                            <div class="bg-blue-gradient text-white p-3 w-100">
-                                <h3>Step 1</h3>
-                                <p>Enter your address and monthly power spend</p>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6 col-lg-3 d-flex align-items-stretch my-3">
-                            <div class="bg-blue-gradient text-white p-3 w-100">
-                                <h3>Step 2</h3>
-                                <p>Our solar panel layout tool will show you how many solar panels will fit on your roof</p>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6 col-lg-3 d-flex align-items-stretch my-3">
-                            <div class="bg-blue-gradient text-white p-3 w-100">
-                                <h3>Step 3</h3>
-                                <p>Generate an estimate showing ballpark cost and savings for the system you need</p>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6 col-lg-3 d-flex align-items-stretch my-3">
-                            <div class="bg-blue-gradient text-white p-3 w-100">
-                                <h3>Step 4</h3>
-                                <p>Compare prices of solar installers near you and refine your estimate into an exact solar quote</p>
-                            </div>
-                        </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-3 d-flex align-items-stretch my-3">
+                    <div class="bg-blue-gradient text-white p-3 w-100">
+                      <h3>Step 2</h3>
+                      <p>Our solar panel layout tool will show you how many solar panels will fit on your roof</p>
                     </div>
-                    <div class="row justify-content-center">
-                        <div class="col-10 offset-lg-2 col-sm-6 col-xs-6">
-                            <form name="mini_ip_code_cta" method="POST" class="row" action="https://www.solar-estimate.org/calculators/solar-quote/process-call-to-action-calculator-redirecting">
-              <input type="hidden" name="_token" value="wVNKUTB5Hp6oKbwQyuGGxS3RuxxmjpHYVvsw5iy3">
-                <div class="form-group col-12 col-md-auto mb-2">
-                <label for="solar_quote_basic_1_zipcode" class="sr-only">ZIP code</label>
-                <input type="number" id="solar_quote_basic_1_zipcode" class="form-control" placeholder="Enter your ZIP code" autocomplete="postal-code" name="zip" value="">
-                <span class="text-danger"></span>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-3 d-flex align-items-stretch my-3">
+                    <div class="bg-blue-gradient text-white p-3 w-100">
+                      <h3>Step 3</h3>
+                      <p>Generate an estimate showing ballpark cost and savings for the system you need</p>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-3 d-flex align-items-stretch my-3">
+                    <div class="bg-blue-gradient text-white p-3 w-100">
+                      <h3>Step 4</h3>
+                      <p>Compare prices of solar installers near you and refine your estimate into an exact solar quote
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="row justify-content-center">
+                  <div class="col-10 offset-lg-2 col-sm-6 col-xs-6">
+                    <form name="mini_ip_code_cta" method="POST" class="row"
+                      action="https://www.solar-estimate.org/calculators/solar-quote/process-call-to-action-calculator-redirecting">
+                      <input type="hidden" name="_token" value="wVNKUTB5Hp6oKbwQyuGGxS3RuxxmjpHYVvsw5iy3">
+                      <div class="form-group col-12 col-md-auto mb-2">
+                        <label for="solar_quote_basic_1_zipcode" class="sr-only">ZIP code</label>
+                        <input type="number" id="solar_quote_basic_1_zipcode" class="form-control"
+                          placeholder="Enter your ZIP code" autocomplete="postal-code" name="zip" value="">
+                        <span class="text-danger"></span>
+                      </div>
+                      <div class="col-12 col-md-auto pl-md-0 mb-2 text-center">
+                        <button type="submit" class="btn btn-secondary mb-2">Get Started</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
               </div>
-                <div class="col-12 col-md-auto pl-md-0 mb-2 text-center">
-              <button type="submit" class="btn btn-secondary mb-2">Get Started</button>
-                </div>
-            </form>            </div>
-                    </div>
-                </div>
             </div>
         </section>
     <!-- Optional JavaScript -->
