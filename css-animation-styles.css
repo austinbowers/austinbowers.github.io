@@ -1,5 +1,5 @@
 .background-container {
-  background-image: url(roof-image.jpg);
+  background-image: url(roof-image2.jpg);
   background-position: top center;
   background-size: 100%;
   background-repeat: no-repeat;
@@ -8,7 +8,7 @@
 
 .animation-position {
   position: relative;
-  top: 16.5vw;
+  top: 16.7vw;
   left: 55%;
 }
 
