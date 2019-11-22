@@ -355,8 +355,6 @@
       margin: .03vw;
     }
     .animation-position {
-      position: relative;
-      object-fit: cover;
       top: 22.2vw;
       left: 57%;
       width: 20vw;
@@ -418,13 +416,9 @@
       background-image: url(roof-image-mobile.jpg);
       background-position: top center;
       background-size: 130%;
-      background-repeat: no-repeat;
       height: 480px;
-      z-index: 0;
-      position: relative;
     }
     .animation-position {
-      position: relative;
       top: 22vw;
       left: 32%;
       width: 32vw;
