@@ -87,32 +87,79 @@
               <div class="faded-gradient-bottom">
                 <div class="container">
                   <div class="row">
-
-                  </div>
-                </div>
-              </div>
-              <div class="container d-none d-lg-block">
-                <div class="row pt-5">
-                  <div class="col col-lg-6 pt-5">
-                      <div class="bg-blue-gradient p-5" style="box-shadow:0px 0px 15px #000000AB; ;">
-                          <h1 class="text-white">Generate an accurate online solar estimate for your home</h1>
-                          <div class="pt-5">
-                              <form name="mini_ip_code_cta" method="POST" class="row" action="https://www.solar-estimate.org/calculators/solar-quote/process-call-to-action-calculator-redirecting">
-                              <input type="hidden" name="_token" value="B1RcYhazymdWMDJjjw956CHhCgsmlpULpL48tLue">
-                              <div class="form-group col-12 col-md-8 mb-2">
-                                  <label for="solar_quote_basic_1_zipcode" class="sr-only">ZIP code</label>
-                                  <input type="number" id="solar_quote_basic_1_zipcode" class="form-control" placeholder="Enter your address" autocomplete="postal-code" name="zip" value="">
-                              </div>
-                              <div class="col-12 col-md-auto pl-md-0 mb-2 text-center">
-                              <button type="submit" class="btn btn-secondary">Get Started</button>
-                              </div>
-                              </form>
-                              <span class="text-white">No personal information required</span>
-                          </div>
+                    <div class="col-12 p-3 d-flex text-white">
+                      <div class="col-3">
+                        <h4>Bill Offset: 100%</h4>
                       </div>
+                      <div class="col-3">
+                        <h4>No. Panels: 20</h4>
+                      </div>
+                      <div class="col-3">
+                        <h4>kWh p.a. : 78k</h4>
+                      </div>
+                      <div class="col-3">
+                        <h4>Cost: $10k</h4>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
+              <div class="solar-calculator-desktop">
+                  <div class="container pt-5 d-none d-lg-block">
+                      <div class="row">
+                        <div class=" col-12 col-lg-6 pt-1">
+                            <div class="bg-blue-gradient p-5" style="box-shadow:0px 0px 15px #000000AB; ;">
+                                <h1 class="text-white">Generate an accurate online solar estimate for your home</h1>
+                                <div class="pt-5">
+                                    <form name="mini_ip_code_cta" method="POST" class="row" action="https://www.solar-estimate.org/calculators/solar-quote/process-call-to-action-calculator-redirecting">
+                                    <input type="hidden" name="_token" value="B1RcYhazymdWMDJjjw956CHhCgsmlpULpL48tLue">
+                                    <div class="form-group col-12 col-md-8 mb-2">
+                                        <label for="solar_quote_basic_1_zipcode" class="sr-only">ZIP code</label>
+                                        <input type="number" id="solar_quote_basic_1_zipcode" class="form-control" placeholder="Enter your address" autocomplete="postal-code" name="zip" value="">
+                                    </div>
+                                    <div class="col-12 col-md-auto pl-md-0 mb-2 text-center">
+                                    <button type="submit" class="btn btn-secondary">Get Started</button>
+                                    </div>
+                                    </form>
+                                    <span class="text-white">No personal information required</span>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                    </div>  
+              </div>
+            </div>
+            <div class="solar-calculator-mobile">
+                <div class="d-lg-none">
+                    <div class="bg-blue-gradient pt-5 text-center" style="box-shadow:0px 0px 15px #000000AB; ;">
+                      <div class="container">
+                      <h1 class="text-white">Generate a solar estimate for</h1>
+                        <div class="row">
+                            <div class="col-12 pt-2">
+                                <button type="submit" class="btn btn-secondary">Your current location</button>
+                            </div>
+                            <div class="col-12 pt-2">
+                                <span class="text-white">or enter your home address</span>
+                            </div>
+                            <div class="col-8 offset-2 pt-2">
+                                <form name="mini_ip_code_cta" method="POST" class="row" action="https://www.solar-estimate.org/calculators/solar-quote/process-call-to-action-calculator-redirecting">
+                                <input type="hidden" name="_token" value="B1RcYhazymdWMDJjjw956CHhCgsmlpULpL48tLue">
+                                  <div class="form-group col-9 offset-sm-1">
+                                      <label for="solar_quote_basic_1_zipcode" class="sr-only">ZIP code</label>
+                                      <input type="number" id="solar_quote_basic_1_zipcode" class="form-control" placeholder="Enter your address" autocomplete="postal-code" name="zip" value="">
+                                  </div>
+                                  <div>
+                                      <button type="submit" class="btn btn-secondary">Go</button>
+                                  </div>
+                                </form>
+                            </div>
+                            <div class="col-12 pb-5">
+                                <span class="text-white"><span class="glyphicon glyphicon-lock"></span>No personal information required</span>
+                            </div>
+                        </div>
+                      </div> 
+                    </div>
+                </div>
             </div>
             <div class="background-cover-image" style="background-image: url('bg-solar-panels-example.jpg');">
               <div class="bg-blue-gradient-fade">
