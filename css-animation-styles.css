@@ -355,7 +355,7 @@
     /* <md screen */
     .background-container{
       background-size: 135%;
-      height: 600px;
+      height: 650px;
     }
     .panel {
       height: 2vw;
@@ -418,9 +418,6 @@
   
   /*-------END------------- Pointer Animation ---------------------------*/
   /*---------------------------------------------------------------------*/
-  
-
-
 }
 
 @media screen and (max-width: 768px ) {
@@ -430,13 +427,13 @@
       background-position: top center;
       background-size: 120%;
       background-repeat: no-repeat;
-      height: 420px;
+      height: 480px;
       z-index: 0;
       position: relative;
     }
     .animation-position {
       position: relative;
-      top: 28vw;
+      top: 21vw;
       left: 32%;
       width: 32vw;
     }
