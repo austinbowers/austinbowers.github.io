@@ -13,7 +13,7 @@
   background: transparent linear-gradient(180deg, #01579200 0%, #015792F3 64%, #015792 100%) 0% 0% no-repeat padding-box;
   width: 100%;
   bottom: 0;
-  height: 256px;
+
   position: absolute;
 }
 
@@ -23,6 +23,10 @@
   top: 16.5vw;
   left: 55%;
   width: 13%;
+}
+
+#z-index {
+  z-index: 1000;
 }
 
 .panel-row {
@@ -350,8 +354,8 @@
 @media screen and (max-width: 1366px ) {
     /* <md screen */
     .background-container{
-      background-size: 120%;
-      height: 700px;
+      background-size: 135%;
+      height: 600px;
     }
     .panel {
       height: 2vw;
@@ -361,8 +365,8 @@
     .animation-position {
       position: relative;
       object-fit: cover;
-      top: 20vw;
-      left: 56%;
+      top: 22.2vw;
+      left: 57%;
       width: 20vw;
     }
     @keyframes slidePointer {
@@ -419,14 +423,14 @@
 
 }
 
-@media screen and (max-width: 985px ) {
+@media screen and (max-width: 768px ) {
     /* <md screen */
     .background-container {
       background-image: url(roof-image-mobile.jpg);
       background-position: top center;
       background-size: 120%;
       background-repeat: no-repeat;
-      height: 800px;
+      height: 420px;
       z-index: 0;
       position: relative;
     }
@@ -447,7 +451,6 @@
       width: 30vw;
       height: 30vw;
     }
-
 /*---------START------------Pointer Animation ---------------------------*/
 
 
