@@ -1,0 +1,26 @@
+@for $i from 1 through 20 {
+    #panel-#{$i} {
+        animation-name: opacitychanger#{$i};
+    }
+}
+@for $i from 1 through 11 {
+    @keyframes opacitychanger#{$i} { 
+        0%, #{$i + 8}%{
+        opacity: 0;
+        }
+        #{$i + 8.5}%, 100% {
+        opacity: 1;
+        }
+    }
+}
+@for $i from 12 through 20 {
+    @keyframes opacitychanger#{$i} { 
+        0%, #{$i +44}%{
+        opacity: 0;
+        }
+        #{$i + 44.5}%, 100% {
+        opacity: 1;
+        }
+    }
+}
+
