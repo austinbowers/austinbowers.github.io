@@ -1,0 +1,494 @@
+.background-container {
+  background-image: url(images/roof-image.jpg);
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 800px;
+  z-index: 0;
+  position: relative;
+}
+
+.faded-gradient-bottom {
+  background: transparent linear-gradient(180deg, #01579200 0%, #015792F3 64%, #015792 100%) 0% 0% no-repeat padding-box;
+  width: 100%;
+  bottom: 0;
+  position: absolute;
+}
+
+.animation-position {
+  position: relative;
+  object-fit: cover;
+  top: 16.5vw;
+  left: 55%;
+  width: 13%;
+}
+
+.panel-row {
+  display: flex;
+}
+
+/*---------START------------ Panel  Animation ---------------------------*/
+#panel-1 {
+  animation-name: opacitychanger1;
+}
+
+#panel-2 {
+  animation-name: opacitychanger2;
+}
+
+#panel-3 {
+  animation-name: opacitychanger3;
+}
+
+#panel-4 {
+  animation-name: opacitychanger4;
+}
+
+#panel-5 {
+  animation-name: opacitychanger5;
+}
+
+#panel-6 {
+  animation-name: opacitychanger6;
+}
+
+#panel-7 {
+  animation-name: opacitychanger7;
+}
+
+#panel-8 {
+  animation-name: opacitychanger8;
+}
+
+#panel-9 {
+  animation-name: opacitychanger9;
+}
+
+#panel-10 {
+  animation-name: opacitychanger10;
+}
+
+#panel-11 {
+  animation-name: opacitychanger11;
+}
+
+#panel-12 {
+  animation-name: opacitychanger12;
+}
+
+#panel-13 {
+  animation-name: opacitychanger13;
+}
+
+#panel-14 {
+  animation-name: opacitychanger14;
+}
+
+#panel-15 {
+  animation-name: opacitychanger15;
+}
+
+#panel-16 {
+  animation-name: opacitychanger16;
+}
+
+#panel-17 {
+  animation-name: opacitychanger17;
+}
+
+#panel-18 {
+  animation-name: opacitychanger18;
+}
+
+#panel-19 {
+  animation-name: opacitychanger19;
+}
+
+#panel-20 {
+  animation-name: opacitychanger20;
+}
+
+@keyframes opacitychanger1 {
+  0%, 9% {
+    opacity: 0;
+  }
+  9.5%, 100% {
+    opacity: 1;
+  }
+}
+@keyframes opacitychanger2 {
+  0%, 10% {
+    opacity: 0;
+  }
+  10.5%, 100% {
+    opacity: 1;
+  }
+}
+@keyframes opacitychanger3 {
+  0%, 11% {
+    opacity: 0;
+  }
+  11.5%, 100% {
+    opacity: 1;
+  }
+}
+@keyframes opacitychanger4 {
+  0%, 12% {
+    opacity: 0;
+  }
+  12.5%, 100% {
+    opacity: 1;
+  }
+}
+@keyframes opacitychanger5 {
+  0%, 13% {
+    opacity: 0;
+  }
+  13.5%, 100% {
+    opacity: 1;
+  }
+}
+@keyframes opacitychanger6 {
+  0%, 14% {
+    opacity: 0;
+  }
+  14.5%, 100% {
+    opacity: 1;
+  }
+}
+@keyframes opacitychanger7 {
+  0%, 15% {
+    opacity: 0;
+  }
+  15.5%, 100% {
+    opacity: 1;
+  }
+}
+@keyframes opacitychanger8 {
+  0%, 16% {
+    opacity: 0;
+  }
+  16.5%, 100% {
+    opacity: 1;
+  }
+}
+@keyframes opacitychanger9 {
+  0%, 17% {
+    opacity: 0;
+  }
+  17.5%, 100% {
+    opacity: 1;
+  }
+}
+@keyframes opacitychanger10 {
+  0%, 18% {
+    opacity: 0;
+  }
+  18.5%, 100% {
+    opacity: 1;
+  }
+}
+@keyframes opacitychanger11 {
+  0%, 19% {
+    opacity: 0;
+  }
+  19.5%, 100% {
+    opacity: 1;
+  }
+}
+@keyframes opacitychanger12 {
+  0%, 56% {
+    opacity: 0;
+  }
+  56.5%, 100% {
+    opacity: 1;
+  }
+}
+@keyframes opacitychanger13 {
+  0%, 57% {
+    opacity: 0;
+  }
+  57.5%, 100% {
+    opacity: 1;
+  }
+}
+@keyframes opacitychanger14 {
+  0%, 58% {
+    opacity: 0;
+  }
+  58.5%, 100% {
+    opacity: 1;
+  }
+}
+@keyframes opacitychanger15 {
+  0%, 59% {
+    opacity: 0;
+  }
+  59.5%, 100% {
+    opacity: 1;
+  }
+}
+@keyframes opacitychanger16 {
+  0%, 60% {
+    opacity: 0;
+  }
+  60.5%, 100% {
+    opacity: 1;
+  }
+}
+@keyframes opacitychanger17 {
+  0%, 61% {
+    opacity: 0;
+  }
+  61.5%, 100% {
+    opacity: 1;
+  }
+}
+@keyframes opacitychanger18 {
+  0%, 62% {
+    opacity: 0;
+  }
+  62.5%, 100% {
+    opacity: 1;
+  }
+}
+@keyframes opacitychanger19 {
+  0%, 63% {
+    opacity: 0;
+  }
+  63.5%, 100% {
+    opacity: 1;
+  }
+}
+@keyframes opacitychanger20 {
+  0%, 64% {
+    opacity: 0;
+  }
+  64.5%, 100% {
+    opacity: 1;
+  }
+}
+/*---------End------------ Panel  Animation ---------------------------*/
+/*---------START------------Pointer Animation ---------------------------*/
+.pointer {
+  width: 5vw;
+  height: 5vw;
+  position: absolute;
+  z-index: 1;
+  animation-name: slidePointer;
+  animation-iteration-count: 2;
+  animation-duration: 8s;
+  background-image: url(images/mouse-pointer.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0;
+}
+
+@keyframes slidePointer {
+  0%, 1% {
+    left: 0%;
+    top: 0.5vw;
+    opacity: 1;
+  }
+  0%, 10% {
+    left: 0%;
+    top: 0.5vw;
+  }
+  10%, 26% {
+    left: 0%;
+    top: 0.5vw;
+    width: 3vw;
+    height: 3vw;
+  }
+  26%, 50% {
+    left: 100%;
+    top: 0.5vw;
+    width: 3vw;
+    height: 3vw;
+  }
+  50%, 55% {
+    left: -0.5%;
+    top: 2.3vw;
+    width: 5vw;
+    height: 5vw;
+  }
+  55%, 75% {
+    left: -0.5%;
+    top: 2.3vw;
+    width: 3vw;
+    height: 3vw;
+  }
+  75%, 99% {
+    left: 80%;
+    top: 2.3vw;
+    opacity: 1;
+  }
+  99%, 100% {
+    left: 80%;
+    top: 2.3vw;
+    opacity: 0;
+  }
+}
+/*-------END------------- Pointer Animation ---------------------------*/
+/*---------------------------------------------------------------------*/
+/*--------START-------- Panels and Opacity Keyframes ------------------*/
+.panel {
+  height: 1.6vw;
+  width: 1.1vw;
+  margin: 0.03vw;
+  background-color: rgba(45, 119, 204, 0.651);
+  border: 1px solid #E7EDF2;
+  animation-iteration-count: 2;
+  animation-duration: 8s;
+  animation-timing-function: ease-in-out;
+}
+
+/*-------------------------------------------------------------------------*/
+/*----------------------------- Media Queries -----------------------------*/
+/*-------------------------------------------------------------------------*/
+@media screen and (max-width: 1366px) {
+  /* <md screen */
+  .background-container {
+    background-size: 135%;
+    height: 650px;
+  }
+
+  .panel {
+    height: 2vw;
+    width: 1.3vw;
+    margin: 0.03vw;
+  }
+
+  .animation-position {
+    top: 22.2vw;
+    left: 57%;
+    width: 20vw;
+  }
+
+  @keyframes slidePointer {
+    0%, 1% {
+      left: 0%;
+      top: 0.5vw;
+      opacity: 1;
+    }
+    0%, 10% {
+      left: 0%;
+      top: 0.5vw;
+    }
+    10%, 26% {
+      left: 0%;
+      top: 0.5vw;
+      width: 3vw;
+      height: 3vw;
+    }
+    26%, 50% {
+      left: 75%;
+      top: 0.5vw;
+      width: 3vw;
+      height: 3vw;
+    }
+    50%, 55% {
+      left: -0.5%;
+      top: 3vw;
+      width: 5vw;
+      height: 5vw;
+    }
+    55%, 75% {
+      left: -0.5%;
+      top: 3vw;
+      width: 3vw;
+      height: 3vw;
+    }
+    75%, 99% {
+      left: 60%;
+      top: 3vw;
+      opacity: 1;
+    }
+    99%, 100% {
+      left: 60%;
+      top: 3vw;
+      opacity: 0;
+    }
+  }
+  /*-------END------------- Pointer Animation ---------------------------*/
+  /*---------------------------------------------------------------------*/
+}
+@media screen and (max-width: 768px) {
+  /* <md screen */
+  .background-container {
+    background-image: url(images/roof-image-mobile.jpg);
+    background-position: top center;
+    background-size: 130%;
+    height: 480px;
+  }
+
+  .animation-position {
+    top: 22vw;
+    left: 32%;
+    width: 32vw;
+  }
+
+  .panel {
+    height: 4vw;
+    width: 3vw;
+    margin: 0.03vw;
+  }
+
+  .pointer {
+    background-image: url(images/pointer.png);
+    transform: rotate(-15deg);
+    width: 30vw;
+    height: 30vw;
+  }
+
+  /*---------START------------Pointer Animation ---------------------------*/
+  @keyframes slidePointer {
+    0%, 1% {
+      left: -4%;
+      top: 0.5vw;
+      opacity: 1;
+    }
+    0%, 10% {
+      left: -4%;
+      top: 0.5vw;
+    }
+    10%, 26% {
+      left: -4%;
+      top: 0.5vw;
+      width: 20vw;
+      height: 20vw;
+    }
+    26%, 50% {
+      left: 95%;
+      top: 0.5vw;
+      width: 20vw;
+      height: 20vw;
+    }
+    50%, 55% {
+      left: -4%;
+      top: 4vw;
+      width: 30vw;
+      height: 30vw;
+    }
+    55%, 75% {
+      left: -4%;
+      top: 4vw;
+      width: 20vw;
+      height: 20vw;
+    }
+    75%, 99% {
+      left: 80%;
+      top: 4vw;
+      opacity: 1;
+    }
+    99%, 100% {
+      left: 80%;
+      top: 4vw;
+      opacity: 0;
+    }
+  }
+  /*-------END------------- Pointer Animation ---------------------------*/
+  /*---------------------------------------------------------------------*/
+}
+
+/*# sourceMappingURL=scss-animation.css.map */
