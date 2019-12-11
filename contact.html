@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,500" rel="stylesheet">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" type="image/x-icon" href="images/AB_Blue_Logo.png" />
+
+    <title>Austin Bowers | Portfolio Website</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="contact.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script language="JavaScript" src="gen_validatorv31.js" type="text/javascript"></script>
+  </head>
+
+  <body>
+
+    <nav>
+        <div class="nav" id="navmain">
+            <script type="application/javascript">
+            window.onscroll = function() {
+              var prevScrollpos = window.pageYOffset;
+              if (prevScrollpos <= 0) {
+                document.getElementById("navmain").style.top = "0";
+              } else {
+                document.getElementById("navmain").style.top = "-120px";
+             }
+             prevScrollpos;
+            }
+            </script>
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">Austin Bowers</a>
+        </div>
+         <div id="navbar">
+                <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="work.html">Work</a></li>
+                  <li><a href="aboutme.html">About Me</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                </ul>
+         </div><!--/.nav-collapse -->
+         <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="index.html">Home</a>
+                <a href="work.html">Work</a>
+                <a href="aboutme.html">About Me</a>
+                <a id="onpage" href="contact.html">Contact</a>
+         </div>
+              
+              <!-- Use any element to open the sidenav -->
+              <span onclick="openNav()"><img class="navbar-menu" src="images/menubar.png"></span>
+              
+              <script type="application/javascript">
+                    /* Open the sidenav */
+                    function openNav() {
+                      document.getElementById("mySidenav").style.height = "100%";
+                    }
+                    
+                    /* Close/hide the sidenav */
+                    function closeNav() {
+                      document.getElementById("mySidenav").style.height = "0";
+
+                    }
+              </script>
+      </div>
+    </nav>
+
+    <div class="container" id="maincontent">
+        <div class="row">
+            <div id="colone" class="col">
+              <h1>Contact Me</h1>
+              <p>(Email Form Development still in progress... Please get in touch through my contact information at the bottom of this page.)</p>
+            </div>
+          </div>
+        <div class="row">
+            <div id="coltwo" class="col">
+                <form id="emailform" method="POST" name="myemailform" action="form-to-email.php">
+                  <p><input id="name" name="name" type="text" placeholder="First & Last name" 
+                    class="form-control"></p>
+                  <p><input id="subject" name="subject" type="text" placeholder="Subject" 
+                    class="form-control"></p>
+                <p><input id="message" name="message" type="text" placeholder="Message" 
+                    class="form-control"></p>
+                    <p><input id="theiremail" name="theiremail" type="text" placeholder="Your email address" 
+                      class="form-control"></p>
+                <p><input type="submit" id="mail" value="Send" class="btn btn-primary" style="color:white;"></a></p>
+                </form>
+                <script type="text/javascript">
+                // make sure user inputs all boxes script?
+                var frmvalidator  = new Validator("myemailform");
+                frmvalidator.addValidation("name","req","Please provide your name"); 
+                frmvalidator.addValidation("theiremail","req","Please provide your email"); 
+              </script>
+              </div>
+          </div>
+    </div><!-- /.container -->
+  </div>
+  <div class="container" id="footer">
+      <p id="email"><span class="glyphicon glyphicon-envelope"> austin.bowers75@gmail.com</p>
+      <p id="phone"><span class="glyphicon glyphicon-earphone"> 201-919-6988</p>
+      <ul>
+          <li><a href="https://www.linkedin.com/in/austin-bowers-732a99116/"><img src="images/linkdinpng.png"></a></li>
+          <li><a href="https://github.com/austinbowers"><img src="images/github.svg"></a></li>
+          <li><a href="https://www.instagram.com/bluecloudgraphics/"><img src="images/insta.png"></a></li>
+      </ul>
+      <p style="position: fixed; bottom: 0; width: 100%; margin-bottom: 5px;">
+        <small><center>Copyright © Austin Bowers 2019</center></small>
+        <p style="position: fixed; bottom: 0; width: 100%; margin-bottom: 5px;">
+          <small><center>Website Designed and Developed by Austin Bowers</center></small>
+  </div>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>
