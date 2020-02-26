@@ -1,34 +1,59 @@
+.wrapper {
+    padding: 0;
+    max-width: 100%;
+    text-align: center;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.parent {
+    width: 100%;
+    height: 800px;
+    border: 1px solid blue;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
 .mysolar-background-map {
-    background-image: url(images/main-image-cropped.jpg);
-    background-position: left;
+    background-image: url(images/main-image-close-up.jpg);
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    width: 200%;
+    width: 300%;
     height: 800px;
     z-index: 0;
     animation-name: background-zoom;
     animation-iteration-count: 1;
     animation-duration: 10s;
     animation-timing-function: ease-in-out;
-    
+    position: relative;
 
     @keyframes background-zoom {
       0%, 40% {
         width: 100%;
+        background-image: url(images/main-image-cropped.jpg);
         }
-      40%, 50% {
+      40%, 70% {
         width: 100%;
-
+        background-image: url(images/main-image-cropped.jpg);
         }
-      50%, 100% {
+      70%, 100% {
         width: 300%;
-
+        background-image: url(images/main-image-cropped.jpg);
         }
+        99% {
+            background-image: url(images/main-image-cropped.jpg);
+            }
+        100% {
+            background-image: url(images/main-image-close-up.jpg);
+            }
     }
   } 
 
   .marker {
-      position: relative;
+      position: absolute;
       width: 60px;
       top: 25%;
       left: 28%;
