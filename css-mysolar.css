@@ -17,7 +17,7 @@
 }
 
 .mysolar-background-map {
-  background-image: url(images/main-image-cropped.jpg);
+  background-image: url(images/main-image-close-up.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -33,12 +33,21 @@
 @keyframes background-zoom {
   0%, 40% {
     width: 100%;
+    background-image: url(images/main-image-cropped.jpg);
   }
-  40%, 50% {
+  40%, 70% {
     width: 100%;
+    background-image: url(images/main-image-cropped.jpg);
   }
-  50%, 100% {
+  70%, 100% {
     width: 300%;
+    background-image: url(images/main-image-cropped.jpg);
+  }
+  99% {
+    background-image: url(images/main-image-cropped.jpg);
+  }
+  100% {
+    background-image: url(images/main-image-close-up.jpg);
   }
 }
 
