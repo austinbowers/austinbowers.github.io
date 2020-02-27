@@ -85,15 +85,292 @@
     left: 52%;
     opacity: 1;
   }
-  50%, 80% {
+  50%, 51% {
     top: 42%;
     left: 52%;
     opacity: 1;
   }
-  80%, 100% {
+  52% {
     top: 42%;
     left: 52%;
     opacity: 0;
+  }
+}
+
+.animation-position {
+  position: absolute;
+  object-fit: cover;
+  top: 475px;
+  left: 61%;
+  width: 13%;
+  z-index: 2000;
+  transform: rotate(41.5deg);
+  opacity: 1;
+  animation-name: startPanels;
+  animation-iteration-count: 1;
+  animation-duration: 12s;
+}
+@keyframes startPanels {
+  0%, 59% {
+    opacity: 0;
+  }
+  60%, 61% {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 1780px) {
+  .animation-position {
+    left: 65vw;
+  }
+}
+.panel-row {
+  display: flex;
+}
+
+/*---------START------------Pointer Animation ---------------------------*/
+.pointer {
+  width: 5vw;
+  height: 5vw;
+  position: absolute;
+  z-index: 1;
+  animation-name: slidePointer;
+  animation-iteration-count: 1;
+  animation-delay: 7s;
+  animation-duration: 5s;
+  background-image: url(mouse-pointer.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transform: rotate(-45deg);
+}
+
+@keyframes slidePointer {
+  0%, 1% {
+    left: 0%;
+    top: 0.5vw;
+    opacity: 1;
+  }
+  0% {
+    left: 0%;
+    top: 0.5vw;
+  }
+  11% {
+    left: 0;
+    top: 0.5vw;
+    width: 3vw;
+    height: 3vw;
+  }
+  37%, 50% {
+    left: 55%;
+    top: 0.5vw;
+    width: 3vw;
+    height: 3vw;
+  }
+  50%, 57% {
+    left: -0.5%;
+    top: 2.3vw;
+    width: 5vw;
+    height: 5vw;
+  }
+  57% {
+    left: -0.5%;
+    top: 2.3vw;
+    width: 3vw;
+    height: 3vw;
+  }
+  83% {
+    left: 70%;
+    top: 2.3vw;
+    opacity: 1;
+    width: 3vw;
+    height: 3vw;
+  }
+  99%, 100% {
+    left: 70%;
+    top: 2.3vw;
+    opacity: 0;
+    width: 5vw;
+    height: 5vw;
+  }
+}
+/*-------END------------- Pointer Animation ---------------------------*/
+/*---------------------------------------------------------------------*/
+/*--------START-------- Panels and Opacity Keyframes ------------------*/
+.panel-cta {
+  height: 1.6vw;
+  width: 1.1vw;
+  margin: 0.03vw;
+  background-color: rgba(45, 119, 204, 0.651);
+  border: 1px solid #E7EDF2;
+  animation-iteration-count: 1;
+  animation-delay: 7s;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+}
+
+.cta-panel-1 {
+  animation-name: cta-opacitychanger1;
+}
+
+.cta-panel-2 {
+  animation-name: cta-opacitychanger2;
+}
+
+.cta-panel-3 {
+  animation-name: cta-opacitychanger3;
+}
+
+.cta-panel-4 {
+  animation-name: cta-opacitychanger4;
+}
+
+.cta-panel-5 {
+  animation-name: cta-opacitychanger5;
+}
+
+.cta-panel-6 {
+  animation-name: cta-opacitychanger6;
+}
+
+.cta-panel-7 {
+  animation-name: cta-opacitychanger7;
+}
+
+.cta-panel-8 {
+  animation-name: cta-opacitychanger8;
+}
+
+.cta-panel-9 {
+  animation-name: cta-opacitychanger9;
+}
+
+.cta-panel-10 {
+  animation-name: cta-opacitychanger10;
+}
+
+.cta-panel-11 {
+  animation-name: cta-opacitychanger11;
+}
+
+.cta-panel-12 {
+  animation-name: cta-opacitychanger12;
+}
+
+.cta-panel-13 {
+  animation-name: cta-opacitychanger13;
+}
+
+.cta-panel-14 {
+  animation-name: cta-opacitychanger14;
+}
+
+.cta-panel-15 {
+  animation-name: cta-opacitychanger15;
+}
+
+@keyframes cta-opacitychanger1 {
+  0%, 11.3636% {
+    opacity: 0;
+  }
+  12.3636%, 100% {
+    opacity: 1;
+  }
+}
+@keyframes cta-opacitychanger2 {
+  0%, 13.7272% {
+    opacity: 0;
+  }
+  14.7272%, 100% {
+    opacity: 1;
+  }
+}
+@keyframes cta-opacitychanger3 {
+  0%, 16.0908% {
+    opacity: 0;
+  }
+  17.0908%, 100% {
+    opacity: 1;
+  }
+}
+@keyframes cta-opacitychanger4 {
+  0%, 18.4544% {
+    opacity: 0;
+  }
+  19.4544%, 100% {
+    opacity: 1;
+  }
+}
+@keyframes cta-opacitychanger5 {
+  0%, 20.818% {
+    opacity: 0;
+  }
+  21.818%, 100% {
+    opacity: 1;
+  }
+}
+@keyframes cta-opacitychanger6 {
+  0%, 23.1816% {
+    opacity: 0;
+  }
+  24.1816%, 100% {
+    opacity: 1;
+  }
+}
+@keyframes cta-opacitychanger7 {
+  0%, 45.6% {
+    opacity: 0;
+  }
+  46.6%, 100% {
+    opacity: 1;
+  }
+}
+@keyframes cta-opacitychanger8 {
+  0%, 48.2% {
+    opacity: 0;
+  }
+  49.2%, 100% {
+    opacity: 1;
+  }
+}
+@keyframes cta-opacitychanger9 {
+  0%, 50.8% {
+    opacity: 0;
+  }
+  51.8%, 100% {
+    opacity: 1;
+  }
+}
+@keyframes cta-opacitychanger10 {
+  0%, 53.4% {
+    opacity: 0;
+  }
+  54.4%, 100% {
+    opacity: 1;
+  }
+}
+@keyframes cta-opacitychanger11 {
+  0%, 56% {
+    opacity: 0;
+  }
+  57%, 100% {
+    opacity: 1;
+  }
+}
+@keyframes cta-opacitychanger12 {
+  0%, 58.6% {
+    opacity: 0;
+  }
+  59.6%, 100% {
+    opacity: 1;
+  }
+}
+@keyframes cta-opacitychanger13 {
+  0%, 61.2% {
+    opacity: 0;
+  }
+  62.2%, 100% {
+    opacity: 1;
   }
 }
 
