@@ -96,15 +96,161 @@
           left: 52%;
           opacity: 1;
           }
-        50%, 80% {
+        50%, 51% {
           top: 42%;
           left: 52%;
           opacity: 1;
           }
-          80%, 100% {
-            top: 42%;
-            left: 52%;
+        52% {
+          top: 42%;
+          left: 52%;
             opacity: 0; 
-            }
+          }
       }
+  }
+
+  .animation-position {
+    position: absolute;
+    object-fit: cover;
+    top: 475px;
+    left: 61%; 
+    width: 13%;
+    z-index: 2000;
+    transform: rotate(41.5deg);
+    opacity: 1;
+    animation-name: startPanels;
+    animation-iteration-count: 1;
+    animation-duration: 12s;
+    @keyframes startPanels {
+      0%, 59% {
+        opacity: 0;
+      }
+      60%, 61% {
+        opacity: 1;
+      }
+    }
+  }
+  @media screen and (max-width: 1780px ) {
+    .animation-position {
+    left: 65vw; 
+    }
+  }
+  
+  
+  .panel-row {
+    display: flex;
+  }
+  
+  /*---------START------------Pointer Animation ---------------------------*/
+    .pointer {
+      width: 5vw;
+      height: 5vw;
+      position: absolute;
+      z-index: 1;
+      animation-name: slidePointer;
+      animation-iteration-count: 1;
+      animation-delay: 7s;
+      animation-duration: 5s;
+      background-image: url(mouse-pointer.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      opacity: 0;
+      transform: rotate(-45deg);
+    }
+  
+    @keyframes slidePointer {
+    
+      0%, 1% {
+        left: 0%;
+        top: .5vw;
+        opacity: 1;
+      }
+      0% {
+        left: 0%;
+        top: .5vw;
+    
+      }
+      11% {
+        left: 0;
+        top: .5vw;
+        width: 3vw;
+        height: 3vw;
+      }
+      37%, 50% {
+        left: 55%;
+        top: .5vw;
+        width: 3vw;
+        height: 3vw;
+      }
+      50% , 57%{
+        left: -0.5%;
+        top: 2.3vw;
+        width: 5vw;
+        height: 5vw;
+      }
+      57% {
+        left: -0.5%;
+        top: 2.3vw;
+        width: 3vw;
+        height: 3vw;
+      }
+      83% {
+        left: 70%;
+        top: 2.3vw;
+        opacity: 1;
+        width: 3vw;
+        height: 3vw;
+      }
+      99%, 100% {
+        left: 70%;
+        top: 2.3vw;
+        opacity: 0;
+        width: 5vw;
+        height: 5vw;
+      }
+    }
+  
+  /*-------END------------- Pointer Animation ---------------------------*/
+  /*---------------------------------------------------------------------*/
+  
+  
+  /*--------START-------- Panels and Opacity Keyframes ------------------*/
+  .panel-cta {
+    height: 1.6vw;
+    width: 1.1vw;
+    margin: .03vw;
+    background-color: rgba(45, 119, 204, 0.651);
+    border: 1px solid #E7EDF2;
+    animation-iteration-count: 1;
+    animation-delay: 7s;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+  }
+  
+  @for $i from 1 through 15 {
+    .cta-panel-#{$i} { 
+      animation-name: cta-opacitychanger#{$i};
+    }
+  }
+  
+  @for $i from 1 through 6 {
+    @keyframes cta-opacitychanger#{$i} {
+      0%, #{($i * 2.3636) + 9 + '%'} {
+        opacity: 0;
+      }
+      #{($i * 2.3636) + 10 + '%'}, 100% {
+         opacity: 1;
+       }
+    }
+  }
+  
+  @for $i from 7 through 13 {
+    @keyframes cta-opacitychanger#{$i} {
+      0%, #{(($i - 11) * 2.6) + 56 + '%'} {
+        opacity: 0;
+      }
+      #{(($i - 11) * 2.6) + 57 + '%'}, 100% {
+        opacity: 1;
+      }
+    }
   }
